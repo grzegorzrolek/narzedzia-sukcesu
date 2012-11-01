@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!DOCTYPE genericSFNTTable [
+<!ELEMENT genericSFNTTable (dataLine+)>
+<!ELEMENT dataLine EMPTY>
+<!ATTLIST genericSFNTTable tag CDATA #REQUIRED
+	size CDATA #IMPLIED
+>
+<!ATTLIST dataLine lineNumber CDATA #REQUIRED
+	offset CDATA #REQUIRED
+	hex CDATA #REQUIRED
+	ascii CDATA #IMPLIED
+	unicode CDATA #IMPLIED
+>
+]>
+
+<!--
+ 
+	Kerning state machine for Narzędzia Sukcesu the logotype font
+	Copyright 2012 Grzegorz Rolek
+
+	Be sure to use the -g (generic) option with ftxdumperfuser to fuse this data
+	or it will try to read it as not yet fully implemented kern-specific dump.
+
+-->
+
+
+<genericSFNTTable tag="kern">
+	
+	<dataLine offset="00000000" hex="00010000" /> <!-- Table Version (1.0) -->
+	<dataLine offset="00000004" hex="00000001" /> <!-- Number of subtables -->
+	
+	<dataLine offset="00000008" hex="000001EE" /> <!-- Subtable length -->
+	<dataLine offset="0000000C" hex="00010000" /> <!-- Subtable format (1.0) -->
+	
+	<dataLine offset="00000010" hex="0011" /> <!-- Number of classes -->
+	<dataLine offset="00000012" hex="000A" /> <!-- Offset to classes from 0x10 -->
+	<dataLine offset="00000014" hex="001E" /> <!-- Offset to states from 0x10 -->
+	<dataLine offset="00000016" hex="0172" /> <!-- Offset to entries from 0x10 -->
+	<dataLine offset="00000018" hex="01C6" /> <!-- Offset to values from 0x10 -->
+	
+	<dataLine offset="0000001A" hex="0002" /> <!-- First glyph -->
+	<dataLine offset="0000001C" hex="000F" /> <!-- Range of glyphs -->
+	
+	<!-- Classes of glyph indices given in sequence plus padding to long word -->
+	
+	<dataLine offset="0000001E" hex="04 05 06 07 08 09 0A 01 0B 0C 0D 0E 0F 01 10 00" />
+	<!--                             N  A  R  Z  Ę  D  I     S  U  K  C  E   ̨  |    -->
+	
+	
+	<!-- State arrays with single byte entries for each state -->
+	
+	<!--                             EOTOOBDELEOLN  A  R  Z  EogD  I  S  U  K  C  E  bar-->
+	<dataLine offset="0000002E" hex="00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 12" />
+	<dataLine offset="0000003F" hex="00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 12" />
+	<dataLine offset="00000050" hex="00 00 01 00 00 02 00 00 00 00 00 00 00 00 00 00 00" />
+	<dataLine offset="00000061" hex="00 00 02 00 00 00 03 00 00 00 00 00 00 00 00 00 00" />
+	<dataLine offset="00000072" hex="00 00 03 00 00 00 00 04 00 00 00 00 00 00 00 00 00" />
+	<dataLine offset="00000083" hex="00 00 04 00 00 00 00 00 05 00 00 00 00 00 00 00 00" />
+	<dataLine offset="00000094" hex="00 00 05 00 00 00 00 00 00 06 00 00 00 00 00 00 00" />
+	<dataLine offset="000000A5" hex="00 00 06 00 00 00 00 07 00 00 00 00 00 00 00 00 00" />
+	<dataLine offset="000000B6" hex="00 00 07 00 00 00 00 00 00 00 08 00 00 00 00 00 00" />
+	<dataLine offset="000000C7" hex="00 00 08 00 00 09 00 00 00 00 00 00 00 00 00 00 00" />
+	<dataLine offset="000000D8" hex="00 00 0A 00 00 00 00 00 00 00 00 00 00 00 00 00 00" />
+	<dataLine offset="000000E9" hex="00 00 00 00 00 00 00 00 00 00 00 0B 00 00 00 00 00" />
+	<dataLine offset="000000FA" hex="00 00 0B 00 00 00 00 00 00 00 00 00 0C 00 00 00 00" />
+	<dataLine offset="0000010B" hex="00 00 0C 00 00 00 00 00 00 00 00 00 00 0D 00 00 00" />
+	<dataLine offset="0000011C" hex="00 00 0D 00 00 00 00 00 00 00 00 00 00 00 0E 00 00" />
+	<dataLine offset="0000012D" hex="00 00 0E 00 00 00 00 00 00 00 00 00 00 00 00 0F 00" />
+	<dataLine offset="0000013E" hex="00 00 0F 00 00 00 00 00 00 00 00 10 00 00 00 00 00" />
+	<dataLine offset="0000014F" hex="00 00 10 00 00 00 00 00 00 00 00 00 11 00 00 00 00" />
+	<dataLine offset="00000160" hex="00 00 12 00 13 00 00 00 00 00 00 00 00 00 00 00 00" />
+	<dataLine offset="00000171" hex="00 00 13 00 00 00 00 00 00 00 00 00 00 00 00 00 14" />
+	
+	<!-- Entries: NextStateOffset Push/Advance+ValueOffset -->
+	
+	<dataLine offset="00000182" hex="001E 0000" />
+	<dataLine offset="00000186" hex="0040 0000" />
+	<dataLine offset="0000018A" hex="0051 81C6" />
+	<dataLine offset="0000018E" hex="0062 81C8" />
+	<dataLine offset="00000192" hex="0073 81CA" />
+	<dataLine offset="00000196" hex="0084 81CC" />
+	<dataLine offset="0000019A" hex="0095 81CE" />
+	<dataLine offset="0000019E" hex="00A6 81D0" />
+	<dataLine offset="000001A2" hex="00B7 81D2" />
+	<dataLine offset="000001A6" hex="00C8 81D4" />
+	<dataLine offset="000001AA" hex="00D9 0000" />
+	<dataLine offset="000001AE" hex="00EA 81D6" />
+	<dataLine offset="000001B2" hex="00FB 81D8" />
+	<dataLine offset="000001B6" hex="010C 81DA" />
+	<dataLine offset="000001BA" hex="011D 81DC" />
+	<dataLine offset="000001BE" hex="012E 81DE" />
+	<dataLine offset="000001C2" hex="013F 81E0" />
+	<dataLine offset="000001C6" hex="0161 81E2" />
+	<dataLine offset="000001CA" hex="0150 0000" />
+	<dataLine offset="000001CE" hex="0040 81E4" />
+	<dataLine offset="000001D2" hex="001E 81E4" />
+
+	<!-- Values lists with an end list flag 0x0001 -->
+
+	<dataLine offset="000001D6" hex="0371" /> <!-- NA -->
+	<dataLine offset="000001D8" hex="0267" /> <!-- AR -->
+	<dataLine offset="000001DA" hex="01C3" /> <!-- RZ -->
+	<dataLine offset="000001DC" hex="0163" /> <!-- ZĘ -->
+	<dataLine offset="000001DE" hex="0119" /> <!-- ĘD -->
+	<dataLine offset="000001E0" hex="00F5" /> <!-- DZ -->
+	<dataLine offset="000001E2" hex="00E1" /> <!-- ZI -->
+	<dataLine offset="000001E4" hex="00CD" /> <!-- IA -->
+	<dataLine offset="000001E6" hex="00E1" /> <!-- AS -->
+	<dataLine offset="000001E8" hex="00F5" /> <!-- SU -->
+	<dataLine offset="000001EA" hex="011F" /> <!-- UK -->
+	<dataLine offset="000001EC" hex="015D" /> <!-- KC -->
+	<dataLine offset="000001EE" hex="01CF" /> <!-- CE -->
+	<dataLine offset="000001F0" hex="025B" /> <!-- ES -->
+	<dataLine offset="000001F2" hex="0371" /> <!-- SU -->
+	<dataLine offset="000001F4" hex="051F" /> <!-- || -->
+
+</genericSFNTTable>

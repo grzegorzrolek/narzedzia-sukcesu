@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!DOCTYPE maxpTable [
+<!ELEMENT maxpTable EMPTY>
+<!ATTLIST maxpTable versionMajor CDATA #REQUIRED
+	versionMinor CDATA #REQUIRED
+	numGlyphs CDATA #REQUIRED
+	maxPoints CDATA #IMPLIED
+	maxContours CDATA #IMPLIED
+	maxComponentPoints CDATA #IMPLIED
+	maxComponentContours CDATA #IMPLIED
+	maxZones CDATA #IMPLIED
+	maxTwilightPoints CDATA #IMPLIED
+	maxStorage CDATA #IMPLIED
+	maxFunctionDefs CDATA #IMPLIED
+	maxInstructionDefs CDATA #IMPLIED
+	maxStackElements CDATA #IMPLIED
+	maxSizeOfInstructions CDATA #IMPLIED
+	maxComponentElements CDATA #IMPLIED
+	maxComponentDepth CDATA #IMPLIED
+>
+]>
+
+<!--
+
+	Maximum profile for Narzędzia Sukcesu the logotype font
+	Copyright 2012 Grzegorz Rolek
+
+	Althought maximum number of points/contours could theoretically be calculated
+	from the 'glyf' table automatically on fusion, it won't be.
+
+-->
+
+<maxpTable
+	versionMajor="1"
+	versionMinor="0"
+	numGlyphs="17"
+	maxPoints="32"
+	maxContours="2"
+	maxZones="2"
+	/>

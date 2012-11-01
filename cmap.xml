@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!DOCTYPE cmapTable [
+<!ELEMENT cmapTable ((cmapSubtable|cmapUVSSubtable)+)>
+<!ELEMENT cmapSubtable ((map | rangeMap)+)>
+<!ELEMENT cmapUVSSubtable (variationSelectorRecord+)>
+<!ELEMENT variationSelectorRecord ((defaultTable?), (nonDefaultTable?))>
+<!ELEMENT defaultTable (unmappedCharacter+)>
+<!ELEMENT nonDefaultTable (map+)>
+<!ELEMENT unmappedCharacter EMPTY>
+<!ELEMENT map EMPTY>
+<!ELEMENT rangeMap EMPTY>
+<!ATTLIST cmapTable versionMajor CDATA #IMPLIED
+	versionMinor CDATA #IMPLIED
+>
+<!ATTLIST cmapSubtable encodingID CDATA #IMPLIED
+	format CDATA #REQUIRED
+	platformID CDATA #REQUIRED
+	platformName CDATA #IMPLIED
+	scriptID CDATA #REQUIRED
+	scriptName CDATA #IMPLIED
+	languageID CDATA #REQUIRED
+	languageName CDATA #IMPLIED
+>
+<!ATTLIST cmapUVSSubtable encodingID CDATA #IMPLIED
+	format CDATA #IMPLIED
+	length CDATA #IMPLIED
+	platformID CDATA #REQUIRED
+	platformName CDATA #IMPLIED
+	scriptID CDATA #REQUIRED
+	scriptName CDATA #IMPLIED
+	numRecords CDATA #IMPLIED
+>
+<!ATTLIST variationSelectorRecord variationSelector CDATA #REQUIRED
+	variationSelectorName CDATA #IMPLIED
+	defaultTableOffset CDATA #IMPLIED
+	nonDefaultTableOffset CDATA #IMPLIED
+>
+<!ATTLIST defaultTable numRanges CDATA #IMPLIED
+>
+<!ATTLIST nonDefaultTable numMappings CDATA #IMPLIED
+>
+<!ATTLIST unmappedCharacter charValue CDATA #REQUIRED
+	charName CDATA #IMPLIED
+>
+<!ATTLIST map charValue CDATA #REQUIRED
+	charName CDATA #IMPLIED
+	glyphRefID CDATA #REQUIRED
+	glyphName CDATA #IMPLIED
+>
+<!ATTLIST rangeMap startCharValue CDATA #REQUIRED
+	startCharName CDATA #IMPLIED
+	endCharValue CDATA #REQUIRED
+	endCharName CDATA #IMPLIED
+	glyphRefID CDATA #REQUIRED
+	glyphName CDATA #IMPLIED
+	incrementGlyphID CDATA #IMPLIED
+>
+]>
+
+<!--
+ 
+	Character mapping for Narzędzia Sukcesu the logotype font
+	Copyright 2012 Grzegorz Rolek
+ 
+	Simple 'cmap' table with Unicode Version 2.0 or later character mapping.
+	Basic Multilingual Plane only (no surrogates). No language specified.
+ 
+-->
+
+<cmapTable>
+	<cmapSubtable format="4" platformID="0" scriptID="3" languageID="-1" >
+		<map charValue="0x0020" glyphRefID="9"/>
+		<map charValue="0x0041" glyphRefID="3"/>
+		<map charValue="0x0043" glyphRefID="13"/>
+		<map charValue="0x0044" glyphRefID="7"/>
+		<map charValue="0x0045" glyphRefID="14"/>
+		<map charValue="0x0049" glyphRefID="8"/>
+		<map charValue="0x004B" glyphRefID="12"/>
+		<map charValue="0x004E" glyphRefID="2"/>
+		<map charValue="0x0052" glyphRefID="4"/>
+		<map charValue="0x0053" glyphRefID="10"/>
+		<map charValue="0x0055" glyphRefID="11"/>
+		<map charValue="0x005A" glyphRefID="5"/>
+		<map charValue="0x0061" glyphRefID="3"/>
+		<map charValue="0x0063" glyphRefID="13"/>
+		<map charValue="0x0064" glyphRefID="7"/>
+		<map charValue="0x0065" glyphRefID="14"/>
+		<map charValue="0x0069" glyphRefID="8"/>
+		<map charValue="0x006B" glyphRefID="12"/>
+		<map charValue="0x006E" glyphRefID="2"/>
+		<map charValue="0x0072" glyphRefID="4"/>
+		<map charValue="0x0073" glyphRefID="10"/>
+		<map charValue="0x0075" glyphRefID="11"/>
+		<map charValue="0x007A" glyphRefID="5"/>
+		<map charValue="0x00A0" glyphRefID="9"/>
+		<rangeMap startCharValue="0x0118" endCharValue="0x0119" glyphRefID="6"/>
+		<map charValue="0x0328" glyphRefID="15"/>
+	</cmapSubtable>
+</cmapTable>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!DOCTYPE hheaTable [
+<!ELEMENT hheaTable EMPTY>
+<!ATTLIST hheaTable versionMajor CDATA #IMPLIED
+	versionMinor CDATA #IMPLIED
+	ascender CDATA #IMPLIED
+	descender CDATA #IMPLIED
+	lineGap CDATA #IMPLIED
+	advanceWidthMax CDATA #IMPLIED
+	minLeftSideBearing CDATA #IMPLIED
+	minRightSideBearing CDATA #IMPLIED
+	xMaxExtent CDATA #IMPLIED
+	caretSlopeRise CDATA #IMPLIED
+	caretSlopeRun CDATA #IMPLIED
+	caretOffset CDATA #IMPLIED
+	metricDataFormat CDATA #IMPLIED
+	numberOfHMetrics CDATA #IMPLIED
+>
+]>
+
+<!--
+
+	Horizontal metrics header for Narzędzia Sukcesu the logotype font
+	Copyright 2012 Grzegorz Rolek
+
+	Before fusing this table in, be sure the 'hmtx' table is already fused,
+	otherwise it will not be able to pick up all the necessary values.
+ 
+-->
+
+<hheaTable
+	ascender="2240"
+	descender="-592"
+	lineGap="0"
+	minRightSideBearing="-8"
+	xMaxExtent="368"
+	/>

@@ -1,0 +1,113 @@
+// Kerning Input File for Narzędzia Sukcesu the logotype font
+// Copyright 2012 Grzegorz Rolek
+//
+// Despite numerous mentions in OS X Font Tools docs, the Kerning Input File format
+// has never been publicly released by Apple. This file tries to approximate
+// the syntax and serves as a notepad for writing the 'kern' table in hex by hand.
+
+
+Type Contextual
+Orientation H
+
+N	N
+A	A
+R	R
+Z	Z
+Eog	Eogonek
+D	D
+I	I
+S	S
+U	U
+K	K
+C	C
+E	E
+bar	bracketbar
+
+// The state machine is proofed against any intervening DEL marks.
+// Mind that DEL in place of space is crucial in the state chain.
+// This was introduced in the MIF to force the space between the words.
+
+		EOT	OOB	DEL	EOL	N	A	R	Z	Eog	D	I	S	U	K	C	E	bar
+StartText	1	1	1	1	2	1	1	1	1	1	1	1	1	1	1	1	19
+StartLine	1	1	1	1	2	1	1	1	1	1	1	1	1	1	1	1	19
+HasN		1	1	2	1	1	3	1	1	1	1	1	1	1	1	1	1	1
+HasA		1	1	3	1	1	1	4	1	1	1	1	1	1	1	1	1	1
+HasR		1	1	4	1	1	1	1	5	1	1	1	1	1	1	1	1	1
+HasZ		1	1	5	1	1	1	1	1	6	1	1	1	1	1	1	1	1
+HasEog		1	1	6	1	1	1	1	1	1	7	1	1	1	1	1	1	1
+HasD		1	1	7	1	1	1	1	8	1	1	1	1	1	1	1	1	1
+HasZ2		1	1	8	1	1	1	1	1	1	1	9	1	1	1	1	1	1
+HasI		1	1	9	1	1	10	1	1	1	1	1	1	1	1	1	1	1
+HasA2		1	1	11	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+HasDEL		1	1	1	1	1	1	1	1	1	1	1	12	1	1	1	1	1
+HasS		1	1	12	1	1	1	1	1	1	1	1	1	13	1	1	1	1
+HasU		1	1	13	1	1	1	1	1	1	1	1	1	1	14	1	1	1
+HasK		1	1	14	1	1	1	1	1	1	1	1	1	1	1	15	1	1
+HasC		1	1	15	1	1	1	1	1	1	1	1	1	1	1	1	16	1
+HasE		1	1	16	1	1	1	1	1	1	1	1	17	1	1	1	1	1
+HasS2		1	1	17	1	1	1	1	1	1	1	1	1	18	1	1	1	1
+HasBar		1	1	19	1	20	1	1	1	1	1	1	1	1	1	1	1	1
+HasU2		1	1	20	1	1	1	1	1	1	1	1	1	1	1	1	1	21
+
+	GoTo		Push?		Advance?	KernList
+1	StartText	no		yes		none
+2	HasN		no		yes		none
+3	HasA		yes		yes		NA
+4	HasR		yes		yes		AR
+5	HasZ		yes		yes		RZ
+6	HasEog		yes		yes		ZE
+7	HasD		yes		yes		ED
+8	HasZ2		yes		yes		DZ
+9	HasI		yes		yes		ZI
+10	HasA2		yes		yes		IA
+11	HasDEL		no		yes		none
+12	HasS		yes		yes		AS
+13	HasU		yes		yes		SU
+14	HasK		yes		yes		UK
+15	HasC		yes		yes		KC
+16	HasE		yes		yes		CE
+17	HasS2		yes		yes		ES
+18	HasU2		yes		yes		SU2
+19	HasBar		no		yes		none
+20	HasN		yes		yes		Bar
+21	StartText	yes		yes		Bar
+
+// Until the 'trak' table support becomes available in CoreText,
+// a tracking value of 184 FUnits is added to each kern pair.
+// The listing on the margin are values conceived in a 1000 UPM setting,
+// that were subsequently translated into an em of 2048 target units.
+// Note that in the final binary each value has the lowest bit set
+// to be recognized as an end of a kern list; see the spec for details.
+
+NA
+	880	// 340 + 90 units of tracking
+AR
+	614	// 210 + 90
+RZ
+	450	// 130 + 90
+ZE
+	354	// 83 + 90; Eogonek shifts 3 points forward justifying its mass center
+ED
+	280	// 47 + 90; less 3 points to compensate the shift above
+DZ
+	245	// 30 + 90
+ZI
+	225	// 20 + 90
+IA
+	204	// 10 + 90
+AS
+	225	// 20 + 90
+SU
+	245	// 30 + 90
+UK
+	286	// 50 + 90
+KC
+	348	// 80 + 90
+CE
+	463	// 136 + 90; E shifts 6 points for same reasons
+ES
+	602	// 204 + 90; compensation
+SU2
+	880	// 340 + 90
+Bar
+	1310	// 550 + 90

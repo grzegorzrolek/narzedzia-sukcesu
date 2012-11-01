@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!DOCTYPE hmtxTable [
+<!ELEMENT hmtxTable (LongMetric+)>
+<!ELEMENT LongMetric EMPTY>
+<!ATTLIST LongMetric glyphRefID CDATA #REQUIRED
+	glyphName CDATA #IMPLIED
+	advance CDATA #IMPLIED
+	bearing CDATA #REQUIRED
+>
+]>
+
+<!--
+
+	Horizontal metrics for Narzędzia Sukcesu the logotype font
+	Copyright 2012 Grzegorz Rolek
+
+	Be sure to fuse this table before the 'hhea'. See 'hhea' for details.
+
+-->
+
+<hmtxTable>
+	<LongMetric glyphRefID="0" advance="256" bearing="0" />
+	<LongMetric glyphRefID="1" advance="0" bearing="0" />
+	<LongMetric glyphRefID="2" advance="392" bearing="56" />
+	<LongMetric glyphRefID="3" advance="400" bearing="56" />
+	<LongMetric glyphRefID="4" advance="400" bearing="56" />
+	<LongMetric glyphRefID="5" advance="288" bearing="8" />
+	<LongMetric glyphRefID="6" advance="296" bearing="56" />
+	<LongMetric glyphRefID="7" advance="400" bearing="56" />
+	<LongMetric glyphRefID="8" advance="184" bearing="56" />
+	<LongMetric glyphRefID="9" advance="256" bearing="0" />
+	<LongMetric glyphRefID="10" advance="376" bearing="48" />
+	<LongMetric glyphRefID="11" advance="392" bearing="56" />
+	<LongMetric glyphRefID="12" advance="368" bearing="56" />
+	<LongMetric glyphRefID="13" advance="368" bearing="56" />
+	<LongMetric glyphRefID="14" advance="296" bearing="56" />
+	<LongMetric glyphRefID="15" advance="0" bearing="0" />
+	<LongMetric glyphRefID="16" advance="184" bearing="56" />
+</hmtxTable>

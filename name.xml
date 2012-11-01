@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!DOCTYPE nameTable [
+<!ELEMENT nameTable (nameTableEntry+)>
+<!ELEMENT nameTableEntry (localizedName+)>
+<!ELEMENT localizedName (#PCDATA)>
+<!ATTLIST nameTableEntry nameTypeID CDATA #REQUIRED
+	nameTypeName CDATA #IMPLIED>
+<!ATTLIST nameTable fontName CDATA #IMPLIED>
+<!ATTLIST localizedName platformID CDATA #REQUIRED
+	platformName CDATA #IMPLIED
+	scriptID CDATA #REQUIRED
+	scriptName CDATA #IMPLIED
+	languageID CDATA #REQUIRED
+	languageName CDATA #IMPLIED
+	isRawHex CDATA #IMPLIED
+>
+]>
+
+<!--
+ 
+	Name records for Narzędzia Sukcesu the logotype font
+	Copyright 2012 Grzegorz Rolek
+ 
+	Most entries are Unicode Version 2.0 or later with BMP only.
+	PostScript name requires Macintosh platform with script MacRoman.
+	Track name entry is a name for a track in the 'trak' table.
+
+-->
+
+<nameTable>
+	
+	<!-- Copyright -->
+	<nameTableEntry nameTypeID="0">
+		<localizedName platformID="0" scriptID="3" languageID="0">Copyright 2012 Grzegorz Rolek</localizedName>
+	</nameTableEntry>
+	
+	<!-- Family Name -->
+	<nameTableEntry nameTypeID="1">
+		<localizedName platformID="0" scriptID="3" languageID="0">Narzędzia Sukcesu</localizedName>
+	</nameTableEntry>
+	
+	<!-- Style Name -->
+	<nameTableEntry nameTypeID="2">
+		<localizedName platformID="0" scriptID="3" languageID="0">Logotype</localizedName>
+	</nameTableEntry>
+	
+	<!-- Unique Name -->
+	<nameTableEntry nameTypeID="3">
+		<localizedName platformID="0" scriptID="3" languageID="0">Narzędzia Sukcesu the Logotype</localizedName>
+	</nameTableEntry>
+	
+	<!-- Full Name -->
+	<nameTableEntry nameTypeID="4">
+		<localizedName platformID="0" scriptID="3" languageID="0">Narzędzia Sukcesu</localizedName>
+	</nameTableEntry>
+	
+	<!-- Version -->
+	<nameTableEntry nameTypeID="5">
+		<localizedName platformID="0" scriptID="3" languageID="0">0.1</localizedName>
+	</nameTableEntry>
+	
+	<!-- PostScript -->
+	<nameTableEntry nameTypeID="6">
+		<localizedName platformID="1" scriptID="0" languageID="0">NarzedziaSukcesu-Logotype</localizedName>
+	</nameTableEntry>
+	
+	<!-- Trademark -->
+	<nameTableEntry nameTypeID="7">
+		<localizedName platformID="0" scriptID="3" languageID="0">Trademark of Narzędzia Sukcesu.</localizedName>
+	</nameTableEntry>
+	
+	<!-- Designer -->
+	<nameTableEntry nameTypeID="9">
+		<localizedName platformID="0" scriptID="3" languageID="0">Grzegorz Rolek</localizedName>
+	</nameTableEntry>
+	
+	<!-- Description -->
+	<nameTableEntry nameTypeID="10">
+		<localizedName platformID="0" scriptID="3" languageID="0">Spontaneously sets the logotype of Narzędzia Sukcesu.</localizedName>
+	</nameTableEntry>
+
+	<!-- License -->
+	<nameTableEntry nameTypeID="13">
+		<localizedName platformID="0" scriptID="3" languageID="0">For documentation purposes only.</localizedName>
+	</nameTableEntry>
+	
+	<!-- Track (uncomment when fusing the 'trak' table) 
+	<nameTableEntry nameTypeID="256">
+		<localizedName platformID="0" scriptID="3" languageID="0">Logotype</localizedName>
+	</nameTableEntry>
+	-->
+
+</nameTable>

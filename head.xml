@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!DOCTYPE headTable [
+<!ELEMENT headTable EMPTY>
+<!ATTLIST headTable tableVersion CDATA #REQUIRED
+	fontVersion CDATA #REQUIRED
+	checkSumAdjustment CDATA #IMPLIED
+	magicNumber CDATA #IMPLIED
+	flags CDATA #REQUIRED
+	unitsPerEm CDATA #REQUIRED
+	created CDATA #IMPLIED
+	modified CDATA #IMPLIED
+	xMin CDATA #REQUIRED
+	yMin CDATA #REQUIRED
+	xMax CDATA #REQUIRED
+	yMax CDATA #REQUIRED
+	macStyle CDATA #REQUIRED
+	lowestRecPPEM CDATA #REQUIRED
+	fontDirectionHint CDATA #REQUIRED
+	indexToLocFormat CDATA #REQUIRED
+	glyphDataFormat CDATA #REQUIRED
+>
+]>
+
+<!--
+
+	Font header for Narzędzia Sukcesu the logotype font
+	Copyright 2012 Grzegorz Rolek
+
+	Lowest readable point per em set to 17 points, since that's when
+	the 'kern' table is being triggered, apparently.
+	Date modified will be reset automatically on fuse, so just ignore it.
+ 
+-->
+
+<headTable
+	tableVersion="1.0"
+	fontVersion="0.1"
+	flags="kBaselineIsY0 | kUseIntegerScaling | kFontRequiresLayout | kFontHasDefaultMorts"
+	unitsPerEm="2048"
+	created="Fri, Aug 10, 2012"
+	modified="Wed, Aug 29, 2012"
+	xMin="0"
+	yMin="-592"
+	xMax="368"
+	yMax="2232"
+	macStyle="normal"
+	lowestRecPPEM="17"
+	fontDirectionHint="2"
+	indexToLocFormat="0"
+	glyphDataFormat="0"
+	/>

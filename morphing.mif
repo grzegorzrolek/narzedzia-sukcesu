@@ -1,0 +1,176 @@
+// Morph Input File for Narzędzia Sukcesu the logotype font
+// Copyright 2012 Grzegorz Rolek
+
+
+// Ligate the combining ogonek, if used.
+
+Type LigatureList
+Name NULL
+Namecode 27
+Setting NULL
+Settingcode 0
+Default yes
+Orientation H
+Forward yes
+Exclusive no
+
+List
+	Eogonek	E ogonekcmb
+
+
+// Delete the space between the two words.
+//
+// The state chain is proofed against any intervening DEL marks.
+// This is necessary in particular because of possible Eogonek ligation introduced above.
+
+Type Contextual
+Name NULL
+Namecode 16000
+Setting NULL
+Settingcode 0
+Default yes
+Orientation H
+Forward yes
+Exclusive no
+
+N	N
+A	A
+R	R
+Z	Z
+Eog	Eogonek
+D	D
+I	I
+Spc	space
+S	S
+U	U
+K	K
+C	C
+E	E
+
+		EOT	OOB	DEL	EOL	N	A	R	Z	Eog	D	I	Spc	S	U	K	C	E
+StartText	1	1	1	1	2	1	1	1	1	1	1	1	1	1	1	1	1
+StartLine	1	1	1	1	2	1	1	1	1	1	1	1	1	1	1	1	1
+HasN		1	1	2	1	1	3	1	1	1	1	1	1	1	1	1	1	1
+HasA		1	1	3	1	1	1	4	1	1	1	1	1	1	1	1	1	1
+HasR		1	1	4	1	1	1	1	5	1	1	1	1	1	1	1	1	1
+HasZ		1	1	5	1	1	1	1	1	6	1	1	1	1	1	1	1	1
+HasEog		1	1	6	1	1	1	1	1	1	7	1	1	1	1	1	1	1
+HasD		1	1	7	1	1	1	1	8	1	1	1	1	1	1	1	1	1
+HasZ2		1	1	8	1	1	1	1	1	1	1	9	1	1	1	1	1	1
+HasI		1	1	9	1	1	10	1	1	1	1	1	1	1	1	1	1	1
+HasA2		1	1	10	1	1	1	1	1	1	1	1	11	1	1	1	1	1
+HasSpc		1	1	19	1	1	1	1	1	1	1	1	1	12	1	1	1	1
+HasS		1	1	12	1	1	1	1	1	1	1	1	1	1	13	1	1	1
+HasU		1	1	13	1	1	1	1	1	1	1	1	1	1	1	14	1	1
+HasK		1	1	14	1	1	1	1	1	1	1	1	1	1	1	1	15	1
+HasC		1	1	15	1	1	1	1	1	1	1	1	1	1	1	1	1	16
+HasE		1	1	16	1	1	1	1	1	1	1	1	1	17	1	1	1	1
+HasS2		1	1	17	1	1	1	1	1	1	1	1	1	1	18	1	1	1
+
+	GoTo		Mark?		Advance?	SubstMark	SubstCurrent
+1	StartText	no		yes		none		none
+2	HasN		no		yes		none		none
+3	HasA		no		yes		none		none
+4	HasR		no		yes		none		none
+5	HasZ		no		yes		none		none
+6	HasEog		no		yes		none		none
+7	HasD		no		yes		none		none
+8	HasZ2		no		yes		none		none
+9	HasI		no		yes		none		none
+10	HasA2		no		yes		none		none
+11	HasSpc		yes		yes		none		none
+12	HasS		no		yes		DelSpc		none
+13	HasU		no		yes		none		none
+14	HasK		no		yes		none		none
+15	HasC		no		yes		none		none
+16	HasE		no		yes		none		none
+17	HasS2		no		yes		none		none
+18	StartText	no		yes		none		none
+19	HasSpc		no		yes		none		none
+
+DelSpc
+	space DEL
+
+
+// Insert bracketing bars.
+//
+// Proofed against DEL marks as well; see ligation and space deletion above.
+// Mind that DEL in place of space is crucial in the state chain.
+// This forces the typist to indeed type this space between the words. 
+
+Type Insertion
+Name NULL
+Namecode 16000
+Setting NULL
+Settingcode 0
+Default yes
+Orientation H
+Forward yes
+Exclusive no
+
+N	N
+A	A
+R	R
+Z	Z
+Eog	Eogonek
+D	D
+I	I
+S	S
+U	U
+K	K
+C	C
+E	E
+
+		EOT	OOB	DEL	EOL	N	A	R	Z	Eog	D	I	S	U	K	C	E
+StartText	1	1	1	1	2	1	1	1	1	1	1	1	1	1	1	1
+StartLine	1	1	1	1	2	1	1	1	1	1	1	1	1	1	1	1
+HasN		1	1	19	1	1	3	1	1	1	1	1	1	1	1	1	1
+HasA		1	1	3	1	1	1	4	1	1	1	1	1	1	1	1	1
+HasR		1	1	4	1	1	1	1	5	1	1	1	1	1	1	1	1
+HasZ		1	1	5	1	1	1	1	1	6	1	1	1	1	1	1	1
+HasEog		1	1	6	1	1	1	1	1	1	7	1	1	1	1	1	1
+HasD		1	1	7	1	1	1	1	8	1	1	1	1	1	1	1	1
+HasZ2		1	1	8	1	1	1	1	1	1	1	9	1	1	1	1	1
+HasI		1	1	9	1	1	10	1	1	1	1	1	1	1	1	1	1
+HasA2		1	1	11	1	1	1	1	1	1	1	1	1	1	1	1	1
+HasDEL		1	1	1	1	1	1	1	1	1	1	1	12	1	1	1	1
+HasS		1	1	12	1	1	1	1	1	1	1	1	1	13	1	1	1
+HasU		1	1	13	1	1	1	1	1	1	1	1	1	1	14	1	1
+HasK		1	1	14	1	1	1	1	1	1	1	1	1	1	1	15	1
+HasC		1	1	15	1	1	1	1	1	1	1	1	1	1	1	1	16
+HasE		1	1	16	1	1	1	1	1	1	1	1	17	1	1	1	1
+HasS2		1	1	17	1	1	1	1	1	1	1	1	1	18	1	1	1
+
+	GoTo		Mark?		Advance?	InsertMark	InsertCurrent
+1	StartText	no		yes		none		none
+2	HasN		yes		yes		none		none
+3	HasA		no		yes		none		none
+4	HasR		no		yes		none		none
+5	HasZ		no		yes		none		none
+6	HasEog		no		yes		none		none
+7	HasD		no		yes		none		none
+8	HasZ2		no		yes		none		none
+9	HasI		no		yes		none		none
+10	HasA2		no		yes		none		none
+11	HasDEL		no		yes		none		none
+12	HasS		no		yes		none		none
+13	HasU		no		yes		none		none
+14	HasK		no		yes		none		none
+15	HasC		no		yes		none		none
+16	HasE		no		yes		none		none
+17	HasS2		no		yes		none		none
+18	StartText	no		yes		Before		After
+19	HasN		no		yes		none		none
+
+// This insertion would be better served as a split vowel type instead of kashida-like,
+// but this apparently does not work in CoreText, having some fatal display issues.
+
+Before
+	IsKashidaLike yes
+	InsertBefore yes
+	Glyphs bracketbar
+
+After
+	IsKashidaLike yes
+	InsertBefore no
+	Glyphs bracketbar

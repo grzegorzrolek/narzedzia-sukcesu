@@ -1,0 +1,48 @@
+NARZĘDZIA SUKCESU THE LOGOTYPE FONT
+
+This font sets a logotype on the brand's name spontaneously while typing.
+It is part of a broader identity work inspired by Chevrolet Nova's
+speedometer designs of the late '60s. This bit of the work is made open
+as a documentation on still sparse TrueType AAT font development.
+
+
+EMPIRE'S CUSTOM REVIVAL
+
+Type used is a custom interpretation of the Empire typeface, originally
+designed by Morris Fuller Benton and released under American Type
+Founders in 1937. Found on various facsimiles, all needed letterforms
+were translated by hand into tight and tidy TrueType curves fitting well
+Empire's formal simplicity.
+
+
+FONT MECHANICS
+
+Typesetting process responds and adapts to each successively typed
+letter in the 'Narzędzia Sukcesu' input stream. If you miss or mismatch
+any letter in the stream, the process stops in place.
+
+Internally these are state machines that have states chained across the
+entire stream. Kerning builds from letter to letter, intervening space
+gets squashed, caret adjusted and, if the string comes to an end, the
+whole thing gets enclosed by the brackets.
+
+
+DEVELOPMENT
+
+The font is a TrueType font flavored with Apple Advanced Typography,
+built from scratch with the OS X Font Tools.
+
+Individual font tables are either edited directly in their respective
+dumps, or are written as dedicated input files. Few tables that the
+tools don't read are prepared as generic hex data in the Font Tools
+syntax. Font outlines, drawn in advance in a font editor, are also
+stored as such data. Those source files are all consecutively compiled
+into a blank font, Null the TrueType font in particular.
+
+
+COPYRIGHT & TRADEMARK NOTICE
+
+This work is made open, but its use, as well as use of the logotype
+itself, is restricted by copyright and trademark laws. Copyright for all
+the work is held by Grzegorz Rolek, 2012. The sole trademark owner is
+Marek Błaszk, Narzędzia Sukcesu.

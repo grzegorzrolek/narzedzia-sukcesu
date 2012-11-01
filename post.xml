@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!DOCTYPE postTable [
+<!ELEMENT postTable (PostScriptName+)>
+<!ELEMENT PostScriptName EMPTY>
+<!ATTLIST postTable versionMajor CDATA #REQUIRED
+	versionMinor CDATA #REQUIRED
+	italicAngle CDATA #REQUIRED
+	underlinePosition CDATA #REQUIRED
+	underlineThickness CDATA #REQUIRED
+	isFixedPitch CDATA #REQUIRED
+	minMemType42 CDATA #REQUIRED
+	maxMemType42 CDATA #REQUIRED
+	minMemType1 CDATA #REQUIRED
+	maxMemType1 CDATA #REQUIRED
+>
+<!ATTLIST PostScriptName glyphRefID CDATA #REQUIRED
+	PostScriptIndex CDATA #IMPLIED
+	NameString CDATA #REQUIRED
+>
+]>
+
+<!--
+
+	PostScript entries for Narzędzia Sukcesu the logotype font
+	Copyright 2012 Grzegorz Rolek
+
+	Number of glyphs must match the maxGlyphs entry of 'maxp' table.
+ 
+-->
+
+<postTable
+	versionMajor="2"
+	versionMinor="0"
+	italicAngle="0.0"
+	underlinePosition="0"
+	underlineThickness="0"
+	isFixedPitch="0"
+	minMemType42="0"
+	maxMemType42="0"
+	minMemType1="0"
+	maxMemType1="0"
+	>
+		<PostScriptName glyphRefID="0" NameString=".notdef" />
+		<PostScriptName glyphRefID="1" NameString="NULL" />
+		<PostScriptName glyphRefID="2" NameString="N" />
+		<PostScriptName glyphRefID="3" NameString="A" />
+		<PostScriptName glyphRefID="4" NameString="R" />
+		<PostScriptName glyphRefID="5" NameString="Z" />
+		<PostScriptName glyphRefID="6" NameString="Eogonek" />
+		<PostScriptName glyphRefID="7" NameString="D" />
+		<PostScriptName glyphRefID="8" NameString="I" />
+		<PostScriptName glyphRefID="9" NameString="space" />
+		<PostScriptName glyphRefID="10" NameString="S" />
+		<PostScriptName glyphRefID="11" NameString="U" />
+		<PostScriptName glyphRefID="12" NameString="K" />
+		<PostScriptName glyphRefID="13" NameString="C" />
+		<PostScriptName glyphRefID="14" NameString="E" />
+		<PostScriptName glyphRefID="15" NameString="ogonekcmb" />
+		<PostScriptName glyphRefID="16" NameString="bracketbar" />
+</postTable>
