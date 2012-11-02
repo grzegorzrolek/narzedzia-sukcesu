@@ -39,7 +39,7 @@ then
 	mv $TARGET $TMP_TARGET
 
 	# Do the autohinting.
-	ttfautohint --latin-fallback --symbol --no-info $TMP_TARGET $TARGET
+	ttfautohint --latin-fallback --no-info $TMP_TARGET $TARGET
 
 	# Clean up.
 	rm $TMP_TARGET

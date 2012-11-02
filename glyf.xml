@@ -21,6 +21,7 @@
 
 	Number of glyphs must match the maxGlyphs entry of 'maxp' table.
 	For individual glyph names see the 'post' table. 
+	ID 17 serves as a feed for ttfautohint to pick up stem widths from. 
  
 -->
 
@@ -42,4 +43,5 @@
 	<glyphData glyphRefID="14" data="00010038000001180640000B000033113315231133152311331538D890888898064020FD3820FCE820000000" />
 	<glyphData glyphRefID="15" data="" />
 	<glyphData glyphRefID="16" data="00010038FDB0008008B800030000131133113848FDB00B08F4F80000" />
+	<glyphData glyphRefID="17" data="00020038FFF8014806480007000F000037143235113422150311342015111420808080480110FEF078686805506868FAC005309090FAD090" />
 </glyfTable>
