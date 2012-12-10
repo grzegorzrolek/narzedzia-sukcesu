@@ -32,61 +32,73 @@
 	<!-- Copyright -->
 	<nameTableEntry nameTypeID="0">
 		<localizedName platformID="0" scriptID="3" languageID="0">Copyright 2012 Grzegorz Rolek</localizedName>
+		<localizedName platformID="3" scriptID="1" languageID="1033">Copyright 2012 Grzegorz Rolek</localizedName>
 	</nameTableEntry>
 	
 	<!-- Family Name -->
 	<nameTableEntry nameTypeID="1">
 		<localizedName platformID="0" scriptID="3" languageID="0">Narzędzia Sukcesu</localizedName>
+		<localizedName platformID="3" scriptID="1" languageID="1033">Narzędzia Sukcesu</localizedName>
 	</nameTableEntry>
 	
 	<!-- Style Name -->
 	<nameTableEntry nameTypeID="2">
 		<localizedName platformID="0" scriptID="3" languageID="0">Logotype</localizedName>
+		<localizedName platformID="3" scriptID="1" languageID="1033">Logotype</localizedName>
 	</nameTableEntry>
 	
 	<!-- Unique Name -->
 	<nameTableEntry nameTypeID="3">
 		<localizedName platformID="0" scriptID="3" languageID="0">Narzędzia Sukcesu the Logotype</localizedName>
+		<localizedName platformID="3" scriptID="1" languageID="1033">Narzędzia Sukcesu the Logotype</localizedName>
 	</nameTableEntry>
 	
 	<!-- Full Name -->
 	<nameTableEntry nameTypeID="4">
 		<localizedName platformID="0" scriptID="3" languageID="0">Narzędzia Sukcesu</localizedName>
+		<localizedName platformID="3" scriptID="1" languageID="1033">Narzędzia Sukcesu</localizedName>
 	</nameTableEntry>
 	
 	<!-- Version -->
 	<nameTableEntry nameTypeID="5">
-		<localizedName platformID="0" scriptID="3" languageID="0">0.2</localizedName>
+		<localizedName platformID="0" scriptID="3" languageID="0">0.3</localizedName>
+		<localizedName platformID="3" scriptID="1" languageID="1033">0.3</localizedName>
 	</nameTableEntry>
 	
 	<!-- PostScript -->
 	<nameTableEntry nameTypeID="6">
 		<localizedName platformID="1" scriptID="0" languageID="0">NarzedziaSukcesu-Logotype</localizedName>
+		<localizedName platformID="3" scriptID="1" languageID="1033">NarzedziaSukcesu-Logotype</localizedName>
 	</nameTableEntry>
 	
 	<!-- Trademark -->
 	<nameTableEntry nameTypeID="7">
 		<localizedName platformID="0" scriptID="3" languageID="0">Trademark of Narzędzia Sukcesu.</localizedName>
+		<localizedName platformID="3" scriptID="1" languageID="1033">Trademark of Narzędzia Sukcesu.</localizedName>
 	</nameTableEntry>
 	
 	<!-- Designer -->
 	<nameTableEntry nameTypeID="9">
 		<localizedName platformID="0" scriptID="3" languageID="0">Grzegorz Rolek</localizedName>
+		<localizedName platformID="3" scriptID="1" languageID="1033">Grzegorz Rolek</localizedName>
 	</nameTableEntry>
 	
 	<!-- Description -->
 	<nameTableEntry nameTypeID="10">
 		<localizedName platformID="0" scriptID="3" languageID="0">Spontaneously sets the logotype of Narzędzia Sukcesu.</localizedName>
+		<localizedName platformID="3" scriptID="1" languageID="1033">Spontaneously sets the logotype of Narzędzia Sukcesu.</localizedName>
 	</nameTableEntry>
 
 	<!-- License -->
 	<nameTableEntry nameTypeID="13">
 		<localizedName platformID="0" scriptID="3" languageID="0">For documentation purposes only.</localizedName>
+		<localizedName platformID="3" scriptID="1" languageID="1033">For documentation purposes only.</localizedName>
 	</nameTableEntry>
 	
 	<!-- Track (uncomment when fusing the 'trak' table) 
 	<nameTableEntry nameTypeID="256">
 		<localizedName platformID="0" scriptID="3" languageID="0">Logotype</localizedName>
+		<localizedName platformID="3" scriptID="1" languageID="1033">Logotype</localizedName>
 	</nameTableEntry>
 	-->
 
