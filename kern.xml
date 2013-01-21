@@ -105,8 +105,8 @@
 	<dataLine offset="000001F4" hex="00F5" /> <!-- DZ -->
 	<dataLine offset="000001F6" hex="00E1" /> <!-- ZI -->
 	<dataLine offset="000001F8" hex="00CD" /> <!-- IA -->
-	<dataLine offset="000001FA" hex="0001" /> <!-- A_ -->
-	<dataLine offset="000001FC" hex="FFE1" /> <!-- _S -->
+	<dataLine offset="000001FA" hex="FFE1" /> <!-- A_ -->
+	<dataLine offset="000001FC" hex="0001" /> <!-- _S -->
 	<dataLine offset="000001FE" hex="00F5" /> <!-- SU -->
 	<dataLine offset="00000200" hex="011F" /> <!-- UK -->
 	<dataLine offset="00000202" hex="015D" /> <!-- KC -->

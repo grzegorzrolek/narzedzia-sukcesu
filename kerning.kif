@@ -95,9 +95,9 @@ ZI
 IA
 	204	// 10 + 90
 A_
-	0	// 0; leave this particular kern to the space's natural advance
+	-31	// 20 + 90 - space's natural advance
 _S
-	-31	// 20 + 90 - space's advance; see above
+	0	// 0; don't kern nor track here: Safari won't read it
 SU
 	245	// 30 + 90
 UK
