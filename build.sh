@@ -25,8 +25,8 @@ done
 # Include the morph table.
 ftxenhancer --mif morphing.mif $TARGET
 
-# State machine kerning and ligature caret entries as generic hex data.
-for TABLE in kern lcar
+# State machine kerning as generic hex data.
+for TABLE in kern
 do ftxdumperfuser --datafile $TABLE.xml --generic --table $TABLE $TARGET
 done
 
