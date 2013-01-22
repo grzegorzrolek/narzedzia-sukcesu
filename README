@@ -23,8 +23,8 @@ any letter in the stream, the process stops in place.
 
 Internally these are state machines that have states chained across the
 entire stream. Kerning builds from letter to letter, intervening space
-gets adjusted and, if the string comes to an end, the whole thing gets
-enclosed by the brackets.
+gets adjusted, tracking applied and, if the string comes to an end, the
+whole thing gets enclosed by the brackets.
 
 
 DEVELOPMENT
