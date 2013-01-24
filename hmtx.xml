@@ -34,7 +34,7 @@
 	<LongMetric glyphRefID="12" advance="368" bearing="56" />
 	<LongMetric glyphRefID="13" advance="368" bearing="56" />
 	<LongMetric glyphRefID="14" advance="296" bearing="56" />
-	<LongMetric glyphRefID="15" advance="0" bearing="0" />
-	<LongMetric glyphRefID="16" advance="184" bearing="56" />
+	<LongMetric glyphRefID="15" advance="184" bearing="56" />
+	<LongMetric glyphRefID="16" advance="0" bearing="0" />
 	<LongMetric glyphRefID="17" advance="384" bearing="56" />
 </hmtxTable>

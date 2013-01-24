@@ -97,7 +97,7 @@
 		<map charValue="0x007A" glyphRefID="5"/>
 		<map charValue="0x00A0" glyphRefID="9"/>
 		<rangeMap startCharValue="0x0118" endCharValue="0x0119" glyphRefID="6"/>
-		<map charValue="0x0328" glyphRefID="15"/>
+		<map charValue="0x0328" glyphRefID="16"/>
 	</cmapSubtable>
 	<cmapSubtable format="4" platformID="3" scriptID="1" languageID="-1" >
 		<map charValue="0x0020" glyphRefID="9"/>
@@ -126,6 +126,6 @@
 		<map charValue="0x007A" glyphRefID="5"/>
 		<map charValue="0x00A0" glyphRefID="9"/>
 		<rangeMap startCharValue="0x0118" endCharValue="0x0119" glyphRefID="6"/>
-		<map charValue="0x0328" glyphRefID="15"/>
+		<map charValue="0x0328" glyphRefID="16"/>
 	</cmapSubtable>
 </cmapTable>
