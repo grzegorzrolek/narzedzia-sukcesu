@@ -3,7 +3,7 @@ NARZĘDZIA SUKCESU THE LOGOTYPE FONT
 This font sets a logotype on the brand's name spontaneously while typing.
 It is part of a broader identity work inspired by Chevrolet Nova's
 speedometer designs of the late '60s. This bit of the work is made open
-as a documentation on still sparse TrueType AAT font development.
+as a documentation on still sparse TrueType AAT/OTL font development.
 
 
 EMPIRE'S CUSTOM REVIVAL
@@ -18,26 +18,30 @@ Empire's formal simplicity.
 FONT MECHANICS
 
 Typesetting process responds and adapts to each successively typed
-letter in the 'Narzędzia Sukcesu' input stream. If you miss or mismatch
+letter in the "Narzędzia Sukcesu" input stream. If you miss or mismatch
 any letter in the stream, the process stops in place.
 
-Internally these are state machines that have states chained across the
-entire stream. Kerning builds from letter to letter, intervening space
-gets adjusted, tracking applied and, if the string comes to an end, the
-whole thing gets enclosed by the brackets.
+Internally these are state machines with states chained across the
+entire stream on the AAT side, or appropriately long chaining contextual
+lookups on the OTL side. In an OTL environment, enclosing quotation
+marks in the input stream are required; with AAT their role is provided
+automatically if you don't type them explicitly.
 
 
 DEVELOPMENT
 
-The font is a TrueType font flavored with Apple Advanced Typography,
-built from scratch with the OS X Font Tools.
+The font is a TrueType font flavored with both Apple Advanced Typography
+and OpenType Layout features, and is built from scratch with the OS X
+Font Tools with a supplement of Adobe's FDK for OpenType.
 
 Individual font tables are either edited directly in their respective
-dumps, or are written as dedicated input files. Few tables that the
-tools don't read are prepared as generic hex data in the Font Tools
-syntax. Font outlines, drawn in advance in a font editor, are also
-stored as such data. Those source files are all consecutively compiled
-into a blank font, Null the TrueType font in particular.
+dumps, or are written as dedicated input files. Dumps are read by the
+Font Tools; the input files by either Font Tools or FDK, depending on
+the font technology used. Few tables that the tools don't read are
+prepared as generic hex data in the Font Tools syntax. Font outlines,
+drawn in advance in a font editor, are also stored as such data. Those
+source files are all consecutively compiled into a blank font, Null the
+TrueType font in particular.
 
 
 COPYRIGHT & TRADEMARK NOTICE

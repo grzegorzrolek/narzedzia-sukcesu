@@ -1,0 +1,49 @@
+# OpenType feature file for Narzędzia Sukcesu the logotype font
+# Copyright 2013 Grzegorz Rolek
+
+
+languagesystem DFLT dflt;
+languagesystem latn dflt;
+
+feature ccmp {
+	sub E ogonekcmb by Eogonek;
+} ccmp;
+
+
+# The listing on the margin are values conceived in a 1000 UPM setting,
+# that were subsequently translated into an em of 2048 target units.
+
+lookup LETTERSPACING {
+	pos quotedbl' 1126 N; # 550 units
+	pos quotedbl N' 696 A; # 340
+	pos quotedbl N A' 430 R; # 210
+	pos quotedbl N A R' 266 Z; # 130
+	pos quotedbl N A R Z' 170 Eogonek; # 83; Eogonek shifts 3 points forward justifying its mass center
+	pos quotedbl N A R Z Eogonek' 96 D; # 47; less 3 points to compensate the shift above
+	pos quotedbl N A R Z Eogonek D' 61 Z; # 30
+	pos quotedbl N A R Z Eogonek D Z' 41 I; # 20
+	pos quotedbl N A R Z Eogonek D Z I' 20 A; # 10
+	pos quotedbl N A R Z Eogonek D Z I A space' -215 S; # 20 - space's natural advance
+	pos quotedbl N A R Z Eogonek D Z I A space S' 61 U; # 30
+	pos quotedbl N A R Z Eogonek D Z I A space S U' 102 K; # 50
+	pos quotedbl N A R Z Eogonek D Z I A space S U K' 164 C; # 80
+	pos quotedbl N A R Z Eogonek D Z I A space S U K C' 279 E; # 136; E shifts 6 points for same reasons
+	pos quotedbl N A R Z Eogonek D Z I A space S U K C E' 418 S; # 204; compensation
+	pos quotedbl N A R Z Eogonek D Z I A space S U K C E S' 696 U; # 340
+	pos quotedbl N A R Z Eogonek D Z I A space S U K C E S U' 1126 quotedbl; # 550
+} LETTERSPACING;
+
+# It appears that Adobe's text engine inserts into a glyph stream the space as an end-of-text character.
+# This makes this fake tracking being applied to right side of the last visible glyph also,
+# giving uneven spacing on both sides of the logotype's bbox. The ignore rule below prevents this behavior.
+
+lookup TRACKING {
+	@ALL = [N A R Z Eogonek D I space S U K C E quotedbl o];
+	ignore pos @ALL' space;
+	pos @ALL' 184 @ALL; # 90 units
+} TRACKING;
+
+feature kern {
+	lookup LETTERSPACING;
+	lookup TRACKING;
+} kern;

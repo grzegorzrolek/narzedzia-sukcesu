@@ -24,7 +24,7 @@ U	U
 K	K
 C	C
 E	E
-bar	bracketbar
+bar	quotedbl
 
 // The state machine is proofed against any intervening DEL marks.
 
@@ -47,7 +47,7 @@ HasK		1	1	14	1	1	1	1	1	1	1	1	1	1	1	1	15	1	1
 HasC		1	1	15	1	1	1	1	1	1	1	1	1	1	1	1	1	16	1
 HasE		1	1	16	1	1	1	1	1	1	1	1	1	17	1	1	1	1	1
 HasS2		1	1	17	1	1	1	1	1	1	1	1	1	1	18	1	1	1	1
-HasBar		1	1	19	1	20	1	1	1	1	1	1	1	1	1	1	1	1	1
+HasBar		1	1	19	1	20	1	1	1	1	1	1	1	1	1	1	1	1	19
 HasU2		1	1	18	1	1	1	1	1	1	1	1	1	1	1	1	1	1	21
 
 	GoTo		Push?		Advance?	KernList

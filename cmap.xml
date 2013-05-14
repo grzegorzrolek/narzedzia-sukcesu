@@ -72,6 +72,7 @@
 <cmapTable>
 	<cmapSubtable format="4" platformID="0" scriptID="3" languageID="-1" >
 		<map charValue="0x0020" glyphRefID="9"/>
+		<map charValue="0x0022" glyphRefID="15"/>
 		<map charValue="0x0041" glyphRefID="3"/>
 		<map charValue="0x0043" glyphRefID="13"/>
 		<map charValue="0x0044" glyphRefID="7"/>
@@ -101,6 +102,7 @@
 	</cmapSubtable>
 	<cmapSubtable format="4" platformID="3" scriptID="1" languageID="-1" >
 		<map charValue="0x0020" glyphRefID="9"/>
+		<map charValue="0x0022" glyphRefID="15"/>
 		<map charValue="0x0041" glyphRefID="3"/>
 		<map charValue="0x0043" glyphRefID="13"/>
 		<map charValue="0x0044" glyphRefID="7"/>
