@@ -32,129 +32,128 @@
 	
 	<!-- Subtable 1. Letterspacing -->
 	
-	<dataLine offset="00000008" hex="00000202" /> <!-- Subtable length -->
+	<dataLine offset="00000008" hex="000001FE" /> <!-- Subtable length -->
 	<dataLine offset="0000000C" hex="00010000" /> <!-- Subtable format (1.0) -->
 	
 	<dataLine offset="00000010" hex="0012" /> <!-- Number of classes -->
 	<dataLine offset="00000012" hex="000A" /> <!-- Offset to classes from 0x10 -->
 	<dataLine offset="00000014" hex="001C" /> <!-- Offset to states from 0x10 -->
 	<dataLine offset="00000016" hex="0184" /> <!-- Offset to entries from 0x10 -->
-	<dataLine offset="00000018" hex="01D8" /> <!-- Offset to values from 0x10 -->
+	<dataLine offset="00000018" hex="01D4" /> <!-- Offset to values from 0x10 -->
 	
 	<dataLine offset="0000001A" hex="0002" /> <!-- First glyph -->
 	<dataLine offset="0000001C" hex="000E" /> <!-- Range of glyphs -->
 	
 	<!-- Classes of glyph indices given in sequence -->
 	
-	<dataLine offset="0000001E" hex="04 05 06 07 08 09 0A 0B 0C 0D 0E 0F 10 11" />
+	<dataLine offset="0000001E" hex="05 06 07 08 09 0A 0B 0C 0D 0E 0F 10 11 04" />
 	<!--                             N  A  R  Z  Ę  D  I     S  U  K  C  E  |  -->
 	
 	
 	<!-- State arrays with single byte entries for each state -->
 	
-	<!--                             EOTOOBDELEOLN  A  R  Z  EogD  I  SpcS  U  K  C  E  bar         No. -->
-	<dataLine offset="0000002C" hex="00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 12" /> <!-- 00 -->
-	<dataLine offset="0000003E" hex="00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 12" /> <!-- 01 -->
-	<dataLine offset="00000050" hex="00 00 01 00 00 02 00 00 00 00 00 00 00 00 00 00 00 00" /> <!-- 02 -->
+	<!--                             EOTOOBDELEOLbarN  A  R  Z  EogD  I  SpcS  U  K  C  E           No. -->
+	<dataLine offset="0000002C" hex="00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00" /> <!-- 00 -->
+	<dataLine offset="0000003E" hex="00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00" /> <!-- 01 -->
+	<dataLine offset="00000050" hex="00 00 01 00 01 02 00 00 00 00 00 00 00 00 00 00 00 00" /> <!-- 02 -->
 	<dataLine offset="00000062" hex="00 00 02 00 00 00 03 00 00 00 00 00 00 00 00 00 00 00" /> <!-- 03 -->
 	<dataLine offset="00000074" hex="00 00 03 00 00 00 00 04 00 00 00 00 00 00 00 00 00 00" /> <!-- 04 -->
 	<dataLine offset="00000086" hex="00 00 04 00 00 00 00 00 05 00 00 00 00 00 00 00 00 00" /> <!-- 05 -->
 	<dataLine offset="00000098" hex="00 00 05 00 00 00 00 00 00 06 00 00 00 00 00 00 00 00" /> <!-- 06 -->
-	<dataLine offset="000000AA" hex="00 00 06 00 00 00 00 07 00 00 00 00 00 00 00 00 00 00" /> <!-- 07 -->
-	<dataLine offset="000000BC" hex="00 00 07 00 00 00 00 00 00 00 08 00 00 00 00 00 00 00" /> <!-- 08 -->
-	<dataLine offset="000000CE" hex="00 00 08 00 00 09 00 00 00 00 00 00 00 00 00 00 00 00" /> <!-- 09 -->
-	<dataLine offset="000000E0" hex="00 00 09 00 00 00 00 00 00 00 00 0A 00 00 00 00 00 00" /> <!-- 0A -->
+	<dataLine offset="000000AA" hex="00 00 06 00 00 00 00 00 00 00 07 00 00 00 00 00 00 00" /> <!-- 07 -->
+	<dataLine offset="000000BC" hex="00 00 07 00 00 00 00 00 08 00 00 00 00 00 00 00 00 00" /> <!-- 08 -->
+	<dataLine offset="000000CE" hex="00 00 08 00 00 00 00 00 00 00 00 09 00 00 00 00 00 00" /> <!-- 09 -->
+	<dataLine offset="000000E0" hex="00 00 09 00 00 00 0A 00 00 00 00 00 00 00 00 00 00 00" /> <!-- 0A -->
 	<dataLine offset="000000F2" hex="00 00 0A 00 00 00 00 00 00 00 00 00 0B 00 00 00 00 00" /> <!-- 0B -->
 	<dataLine offset="00000104" hex="00 00 0B 00 00 00 00 00 00 00 00 00 00 0C 00 00 00 00" /> <!-- 0C -->
 	<dataLine offset="00000116" hex="00 00 0C 00 00 00 00 00 00 00 00 00 00 00 0D 00 00 00" /> <!-- 0D -->
 	<dataLine offset="00000128" hex="00 00 0D 00 00 00 00 00 00 00 00 00 00 00 00 0E 00 00" /> <!-- 0E -->
 	<dataLine offset="0000013A" hex="00 00 0E 00 00 00 00 00 00 00 00 00 00 00 00 00 0F 00" /> <!-- 0F -->
-	<dataLine offset="0000014C" hex="00 00 0F 00 00 00 00 00 00 00 00 00 10 00 00 00 00 00" /> <!-- 10 -->
+	<dataLine offset="0000014C" hex="00 00 0F 00 00 00 00 00 00 00 00 00 00 00 00 00 00 10" /> <!-- 10 -->
 	<dataLine offset="0000015E" hex="00 00 10 00 00 00 00 00 00 00 00 00 00 11 00 00 00 00" /> <!-- 11 -->
-	<dataLine offset="00000170" hex="00 00 12 00 13 00 00 00 00 00 00 00 00 00 00 00 00 12" /> <!-- 12 -->
-	<dataLine offset="00000182" hex="00 00 11 00 00 00 00 00 00 00 00 00 00 00 00 00 00 14" /> <!-- 13 -->
-	
+	<dataLine offset="00000170" hex="00 00 11 00 00 00 00 00 00 00 00 00 00 00 12 00 00 00" /> <!-- 12 -->
+	<dataLine offset="00000182" hex="00 00 12 00 13 00 00 00 00 00 00 00 00 00 00 00 00 00" /> <!-- 13 -->
+
 	<!-- Entries: GoToOffset Push/Advance+ValueOffset   No. GoTo -->
 	
 	<dataLine offset="00000194" hex="001C 0000" /> <!-- 00; 00 -->
 	<dataLine offset="00000198" hex="0040 0000" /> <!-- 01; 02 -->
-	<dataLine offset="0000019C" hex="0052 81D8" /> <!-- 02; 03 -->
-	<dataLine offset="000001A0" hex="0064 81DA" /> <!-- 03; 04 -->
-	<dataLine offset="000001A4" hex="0076 81DC" /> <!-- 04; 05 -->
-	<dataLine offset="000001A8" hex="0088 81DE" /> <!-- 05; 06 -->
-	<dataLine offset="000001AC" hex="009A 81E0" /> <!-- 06; 07 -->
-	<dataLine offset="000001B0" hex="00AC 81E2" /> <!-- 07; 08 -->
-	<dataLine offset="000001B4" hex="00BE 81E4" /> <!-- 08; 09 -->
-	<dataLine offset="000001B8" hex="00D0 81E6" /> <!-- 09; 0A -->
-	<dataLine offset="000001BC" hex="00E2 81E8" /> <!-- 0A; 0B -->
-	<dataLine offset="000001C0" hex="00F4 81EA" /> <!-- 0B; 0C -->
-	<dataLine offset="000001C4" hex="0106 81EC" /> <!-- 0C; 0D -->
-	<dataLine offset="000001C8" hex="0118 81EE" /> <!-- 0D; 0E -->
-	<dataLine offset="000001CC" hex="012A 81F0" /> <!-- 0E; 0F -->
-	<dataLine offset="000001D0" hex="013C 81F2" /> <!-- 0F; 10 -->
-	<dataLine offset="000001D4" hex="014E 81F4" /> <!-- 10; 11 -->
-	<dataLine offset="000001D8" hex="0172 81F6" /> <!-- 11; 13 -->
-	<dataLine offset="000001DC" hex="0160 0000" /> <!-- 12; 12 -->
-	<dataLine offset="000001E0" hex="0040 81F8" /> <!-- 13; 02 -->
-	<dataLine offset="000001E4" hex="001C 81F8" /> <!-- 14; 00 -->
+	<dataLine offset="0000019C" hex="0052 81D4" /> <!-- 02; 03 -->
+	<dataLine offset="000001A0" hex="0064 81D6" /> <!-- 03; 04 -->
+	<dataLine offset="000001A4" hex="0076 81D8" /> <!-- 04; 05 -->
+	<dataLine offset="000001A8" hex="0088 81DA" /> <!-- 05; 06 -->
+	<dataLine offset="000001AC" hex="009A 81DC" /> <!-- 06; 07 -->
+	<dataLine offset="000001B0" hex="00AC 81DE" /> <!-- 07; 08 -->
+	<dataLine offset="000001B4" hex="00BE 81E0" /> <!-- 08; 09 -->
+	<dataLine offset="000001B8" hex="00D0 81E2" /> <!-- 09; 0A -->
+	<dataLine offset="000001BC" hex="00E2 81E4" /> <!-- 0A; 0B -->
+	<dataLine offset="000001C0" hex="00F4 81E6" /> <!-- 0B; 0C -->
+	<dataLine offset="000001C4" hex="0106 81E8" /> <!-- 0C; 0D -->
+	<dataLine offset="000001C8" hex="0118 81EA" /> <!-- 0D; 0E -->
+	<dataLine offset="000001CC" hex="012A 81EC" /> <!-- 0E; 0F -->
+	<dataLine offset="000001D0" hex="013C 81EE" /> <!-- 0F; 10 -->
+	<dataLine offset="000001D4" hex="014E 81F0" /> <!-- 10; 11 -->
+	<dataLine offset="000001D8" hex="0160 81F2" /> <!-- 11; 12 -->
+	<dataLine offset="000001DC" hex="0172 81F4" /> <!-- 12; 13 -->
+	<dataLine offset="000001E0" hex="001C 81D4" /> <!-- 13; 00 -->
 
 	<!-- Values lists with an end list flag 0x0001 -->
 
-	<dataLine offset="000001E8" hex="02B9" /> <!-- NA -->
-	<dataLine offset="000001EA" hex="01AF" /> <!-- AR -->
-	<dataLine offset="000001EC" hex="010B" /> <!-- RZ -->
-	<dataLine offset="000001EE" hex="00AB" /> <!-- ZĘ -->
-	<dataLine offset="000001F0" hex="0061" /> <!-- ĘD -->
-	<dataLine offset="000001F2" hex="003D" /> <!-- DZ -->
-	<dataLine offset="000001F4" hex="0029" /> <!-- ZI -->
-	<dataLine offset="000001F6" hex="0015" /> <!-- IA -->
-	<dataLine offset="000001F8" hex="FF29" /> <!-- A_ -->
-	<dataLine offset="000001FA" hex="0001" /> <!-- _S -->
-	<dataLine offset="000001FC" hex="003D" /> <!-- SU -->
-	<dataLine offset="000001FE" hex="0067" /> <!-- UK -->
-	<dataLine offset="00000200" hex="00A5" /> <!-- KC -->
-	<dataLine offset="00000202" hex="0117" /> <!-- CE -->
-	<dataLine offset="00000204" hex="01A3" /> <!-- ES -->
-	<dataLine offset="00000206" hex="02B9" /> <!-- SU -->
-	<dataLine offset="00000208" hex="0467" /> <!-- || -->
+	<dataLine offset="000001E4" hex="0467" /> <!-- || -->
+	<dataLine offset="000001E6" hex="02B9" /> <!-- NA -->
+	<dataLine offset="000001E8" hex="01AF" /> <!-- AR -->
+	<dataLine offset="000001EA" hex="010B" /> <!-- RZ -->
+	<dataLine offset="000001EC" hex="00AB" /> <!-- ZĘ -->
+	<dataLine offset="000001EE" hex="0061" /> <!-- ĘD -->
+	<dataLine offset="000001F0" hex="003D" /> <!-- DZ -->
+	<dataLine offset="000001F2" hex="0029" /> <!-- ZI -->
+	<dataLine offset="000001F4" hex="0015" /> <!-- IA -->
+	<dataLine offset="000001F6" hex="FF29" /> <!-- A_ -->
+	<dataLine offset="000001F8" hex="0001" /> <!-- _S -->
+	<dataLine offset="000001FA" hex="003D" /> <!-- SU -->
+	<dataLine offset="000001FC" hex="0067" /> <!-- UK -->
+	<dataLine offset="000001FE" hex="00A5" /> <!-- KC -->
+	<dataLine offset="00000200" hex="0117" /> <!-- CE -->
+	<dataLine offset="00000202" hex="01A3" /> <!-- ES -->
+	<dataLine offset="00000204" hex="02B9" /> <!-- SU -->
 	
 	
 	<!-- Subtable 2. Fake tracking -->
 
-	<dataLine offset="0000020A" hex="00000036" /> <!-- Subtable length -->
-	<dataLine offset="0000020E" hex="00010000" /> <!-- Subtable format (1.0) -->
+	<dataLine offset="00000206" hex="00000036" /> <!-- Subtable length -->
+	<dataLine offset="0000020A" hex="00010000" /> <!-- Subtable format (1.0) -->
 	
-	<dataLine offset="00000212" hex="0005" /> <!-- Number of classes -->
-	<dataLine offset="00000214" hex="000A" /> <!-- Offset to classes from subtable's 0x10 -->
-	<dataLine offset="00000216" hex="0010" /> <!-- Offset to states from subtable's 0x10 -->
-	<dataLine offset="00000218" hex="0020" /> <!-- Offset to entries from subtable's 0x10 -->
-	<dataLine offset="0000021A" hex="002C" /> <!-- Offset to values from subtable's 0x10 -->
+	<dataLine offset="0000020E" hex="0005" /> <!-- Number of classes -->
+	<dataLine offset="00000210" hex="000A" /> <!-- Offset to classes from subtable's 0x10 -->
+	<dataLine offset="00000212" hex="0010" /> <!-- Offset to states from subtable's 0x10 -->
+	<dataLine offset="00000214" hex="0020" /> <!-- Offset to entries from subtable's 0x10 -->
+	<dataLine offset="00000216" hex="002C" /> <!-- Offset to values from subtable's 0x10 -->
 	
-	<dataLine offset="0000021C" hex="0009" /> <!-- First glyph -->
-	<dataLine offset="0000021E" hex="0001" /> <!-- Range of glyphs -->
+	<dataLine offset="00000218" hex="0009" /> <!-- First glyph -->
+	<dataLine offset="0000021A" hex="0001" /> <!-- Range of glyphs -->
 	
 	<!-- Classes of glyph indices given in sequence plus padding to long word -->
 	
-	<dataLine offset="00000220" hex="04 00" />
+	<dataLine offset="0000021C" hex="04 00" />
 	<!--                             Spc -->
 	
 	
 	<!-- State arrays with single byte entries for each state -->
 	
 	<!--                             EOTOOBDELEOLSpc         No. -->
-	<dataLine offset="00000222" hex="00 01 00 00 02" /> <!-- 00 -->
-	<dataLine offset="00000227" hex="00 01 00 00 02" /> <!-- 01 -->
-	<dataLine offset="0000022C" hex="00 00 00 00 02" /> <!-- 02 -->
-	<dataLine offset="00000231" hex="00" /> <!-- Padding -->
+	<dataLine offset="0000021E" hex="00 01 00 00 02" /> <!-- 00 -->
+	<dataLine offset="00000223" hex="00 01 00 00 02" /> <!-- 01 -->
+	<dataLine offset="00000228" hex="00 00 00 00 02" /> <!-- 02 -->
+	<dataLine offset="0000022D" hex="00" /> <!-- Padding -->
 
 	<!-- Entries: GoToOffset Push/Advance+ValueOffset   No. GoTo -->
 	
-	<dataLine offset="00000232" hex="0010 0000" /> <!-- 00; 00 -->
-	<dataLine offset="00000236" hex="0010 802C" /> <!-- 01; 02 -->
-	<dataLine offset="0000023A" hex="001A 802C" /> <!-- 02; 02 -->
+	<dataLine offset="0000022E" hex="0010 0000" /> <!-- 00; 00 -->
+	<dataLine offset="00000232" hex="0010 802C" /> <!-- 01; 02 -->
+	<dataLine offset="00000236" hex="001A 802C" /> <!-- 02; 02 -->
 	
 	<!-- Values lists with an end list flag 0x0001 -->
 	
-	<dataLine offset="0000023E" hex="00B7" /> <!-- Track value -->
+	<dataLine offset="0000023A" hex="00B7" /> <!-- Track value -->
 
 </genericSFNTTable>

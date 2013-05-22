@@ -11,6 +11,7 @@
 Type Contextual
 Orientation H
 
+bar	quotedbl
 N	N
 A	A
 R	R
@@ -24,62 +25,62 @@ U	U
 K	K
 C	C
 E	E
-bar	quotedbl
 
 // The state machine is proofed against any intervening DEL marks.
 
-		EOT	OOB	DEL	EOL	N	A	R	Z	Eog	D	I	Spc	S	U	K	C	E	bar
-StartText	1	1	1	1	2	1	1	1	1	1	1	1	1	1	1	1	1	19
-StartLine	1	1	1	1	2	1	1	1	1	1	1	1	1	1	1	1	1	19
-HasN		1	1	2	1	1	3	1	1	1	1	1	1	1	1	1	1	1	1
-HasA		1	1	3	1	1	1	4	1	1	1	1	1	1	1	1	1	1	1
-HasR		1	1	4	1	1	1	1	5	1	1	1	1	1	1	1	1	1	1
-HasZ		1	1	5	1	1	1	1	1	6	1	1	1	1	1	1	1	1	1
-HasEog		1	1	6	1	1	1	1	1	1	7	1	1	1	1	1	1	1	1
-HasD		1	1	7	1	1	1	1	8	1	1	1	1	1	1	1	1	1	1
-HasZ2		1	1	8	1	1	1	1	1	1	1	9	1	1	1	1	1	1	1
-HasI		1	1	9	1	1	10	1	1	1	1	1	1	1	1	1	1	1	1
-HasA2		1	1	10	1	1	1	1	1	1	1	1	11	1	1	1	1	1	1
-HasSpc		1	1	11	1	1	1	1	1	1	1	1	1	12	1	1	1	1	1
-HasS		1	1	12	1	1	1	1	1	1	1	1	1	1	13	1	1	1	1
-HasU		1	1	13	1	1	1	1	1	1	1	1	1	1	1	14	1	1	1
-HasK		1	1	14	1	1	1	1	1	1	1	1	1	1	1	1	15	1	1
-HasC		1	1	15	1	1	1	1	1	1	1	1	1	1	1	1	1	16	1
-HasE		1	1	16	1	1	1	1	1	1	1	1	1	17	1	1	1	1	1
-HasS2		1	1	17	1	1	1	1	1	1	1	1	1	1	18	1	1	1	1
-HasBar		1	1	19	1	20	1	1	1	1	1	1	1	1	1	1	1	1	19
-HasU2		1	1	18	1	1	1	1	1	1	1	1	1	1	1	1	1	1	21
+		EOT	OOB	DEL	EOL	bar	N	A	R	Z	Eog	D	I	Spc	S	U	K	C	E
+StartText	1	1	1	1	2	1	1	1	1	1	1	1	1	1	1	1	1	1
+StartLine	1	1	1	1	2	1	1	1	1	1	1	1	1	1	1	1	1	1
+HasBar		1	1	2	1	2	3	1	1	1	1	1	1	1	1	1	1	1	1
+HasN		1	1	3	1	1	1	4	1	1	1	1	1	1	1	1	1	1	1
+HasA		1	1	4	1	1	1	1	5	1	1	1	1	1	1	1	1	1	1
+HasR		1	1	5	1	1	1	1	1	6	1	1	1	1	1	1	1	1	1
+HasZ		1	1	6	1	1	1	1	1	1	7	1	1	1	1	1	1	1	1
+HasEog		1	1	7	1	1	1	1	1	1	1	8	1	1	1	1	1	1	1
+HasD		1	1	8	1	1	1	1	1	9	1	1	1	1	1	1	1	1	1
+HasZ2		1	1	9	1	1	1	1	1	1	1	1	10	1	1	1	1	1	1
+HasI		1	1	10	1	1	1	11	1	1	1	1	1	1	1	1	1	1	1
+HasA2		1	1	11	1	1	1	1	1	1	1	1	1	12	1	1	1	1	1
+HasSpc		1	1	12	1	1	1	1	1	1	1	1	1	1	13	1	1	1	1
+HasS		1	1	13	1	1	1	1	1	1	1	1	1	1	1	14	1	1	1
+HasU		1	1	14	1	1	1	1	1	1	1	1	1	1	1	1	15	1	1
+HasK		1	1	15	1	1	1	1	1	1	1	1	1	1	1	1	1	16	1
+HasC		1	1	16	1	1	1	1	1	1	1	1	1	1	1	1	1	1	17
+HasE		1	1	17	1	1	1	1	1	1	1	1	1	1	18	1	1	1	1
+HasS2		1	1	18	1	1	1	1	1	1	1	1	1	1	1	19	1	1	1
+HasU2		1	1	19	1	20	1	1	1	1	1	1	1	1	1	1	1	1	1
 
 	GoTo		Push?		Advance?	KernList
 1	StartText	no		yes		none
-2	HasN		no		yes		none
-3	HasA		yes		yes		NA
-4	HasR		yes		yes		AR
-5	HasZ		yes		yes		RZ
-6	HasEog		yes		yes		ZE
-7	HasD		yes		yes		ED
-8	HasZ2		yes		yes		DZ
-9	HasI		yes		yes		ZI
-10	HasA2		yes		yes		IA
-11	HasSpc		yes		yes		A_
-12	HasS		yes		yes		_S
-13	HasU		yes		yes		SU
-14	HasK		yes		yes		UK
-15	HasC		yes		yes		KC
-16	HasE		yes		yes		CE
-17	HasS2		yes		yes		ES
-18	HasU2		yes		yes		SU2
-19	HasBar		no		yes		none
-20	HasN		yes		yes		Bar
-21	StartText	yes		yes		Bar
+2	HasBar		no		yes		none
+3	HasN		yes		yes		Bar
+4	HasA		yes		yes		NA
+5	HasR		yes		yes		AR
+6	HasZ		yes		yes		RZ
+7	HasEog		yes		yes		ZE
+8	HasD		yes		yes		ED
+9	HasZ2		yes		yes		DZ
+10	HasI		yes		yes		ZI
+11	HasA2		yes		yes		IA
+12	HasSpc		yes		yes		A_
+13	HasS		yes		yes		_S
+14	HasU		yes		yes		SU
+15	HasK		yes		yes		UK
+16	HasC		yes		yes		KC
+17	HasE		yes		yes		CE
+18	HasS2		yes		yes		ES
+19	HasU2		yes		yes		SU2
+20	StartText	yes		yes		Bar
 
 // The listing on the margin are values conceived in a 1000 UPM setting,
 // that were subsequently translated into an em of 2048 target units.
 // Note that in the final binary each value has the lowest bit set
 // to be recognized as an end of a kern list; see the spec for details.
 
+Bar
+	1126	// 550 units
 NA
-	696	// 340 units
+	696	// 340
 AR
 	430	// 210
 RZ
@@ -110,8 +111,6 @@ ES
 	418	// 204; compensation
 SU2
 	696	// 340
-Bar
-	1126	// 550
 	
 	
 // Fake tracking

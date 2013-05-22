@@ -33,6 +33,7 @@ Orientation H
 Forward yes
 Exclusive no
 
+bar	quotedbl
 N	N
 A	A
 R	R
@@ -46,50 +47,49 @@ U	U
 K	K
 C	C
 E	E
-bar	quotedbl
 
-		EOT	OOB	DEL	EOL	N	A	R	Z	Eog	D	I	Spc	S	U	K	C	E	bar
-StartText	1	1	1	1	2	1	1	1	1	1	1	1	1	1	1	1	1	20
-StartLine	1	1	1	1	2	1	1	1	1	1	1	1	1	1	1	1	1	20
-HasN		1	1	19	1	1	3	1	1	1	1	1	1	1	1	1	1	1	1
-HasA		1	1	3	1	1	1	4	1	1	1	1	1	1	1	1	1	1	1
-HasR		1	1	4	1	1	1	1	5	1	1	1	1	1	1	1	1	1	1
-HasZ		1	1	5	1	1	1	1	1	6	1	1	1	1	1	1	1	1	1
-HasEog		1	1	6	1	1	1	1	1	1	7	1	1	1	1	1	1	1	1
-HasD		1	1	7	1	1	1	1	8	1	1	1	1	1	1	1	1	1	1
-HasZ2		1	1	8	1	1	1	1	1	1	1	9	1	1	1	1	1	1	1
-HasI		1	1	9	1	1	10	1	1	1	1	1	1	1	1	1	1	1	1
-HasA2		1	1	10	1	1	1	1	1	1	1	1	11	1	1	1	1	1	1
-HasSpc		1	1	11	1	1	1	1	1	1	1	1	1	12	1	1	1	1	1
-HasS		1	1	12	1	1	1	1	1	1	1	1	1	1	13	1	1	1	1
-HasU		1	1	13	1	1	1	1	1	1	1	1	1	1	1	14	1	1	1
-HasK		1	1	14	1	1	1	1	1	1	1	1	1	1	1	1	15	1	1
-HasC		1	1	15	1	1	1	1	1	1	1	1	1	1	1	1	1	16	1
-HasE		1	1	16	1	1	1	1	1	1	1	1	1	17	1	1	1	1	1
-HasS2		1	1	17	1	1	1	1	1	1	1	1	1	1	18	1	1	1	1
-HasBar		1	1	20	1	1	1	1	1	1	1	1	1	1	1	1	1	1	20
+		EOT	OOB	DEL	EOL	bar	N	A	R	Z	Eog	D	I	Spc	S	U	K	C	E
+StartText	1	1	1	1	2	3	1	1	1	1	1	1	1	1	1	1	1	1
+StartLine	1	1	1	1	2	3	1	1	1	1	1	1	1	1	1	1	1	1
+HasBar		1	1	2	1	2	1	1	1	1	1	1	1	1	1	1	1	1	1
+HasN		1	1	4	1	1	1	5	1	1	1	1	1	1	1	1	1	1	1
+HasA		1	1	5	1	1	1	1	6	1	1	1	1	1	1	1	1	1	1
+HasR		1	1	6	1	1	1	1	1	7	1	1	1	1	1	1	1	1	1
+HasZ		1	1	7	1	1	1	1	1	1	8	1	1	1	1	1	1	1	1
+HasEog		1	1	8	1	1	1	1	1	1	1	9	1	1	1	1	1	1	1
+HasD		1	1	9	1	1	1	1	1	10	1	1	1	1	1	1	1	1	1
+HasZ2		1	1	10	1	1	1	1	1	1	1	1	11	1	1	1	1	1	1
+HasI		1	1	11	1	1	1	12	1	1	1	1	1	1	1	1	1	1	1
+HasA2		1	1	12	1	1	1	1	1	1	1	1	1	13	1	1	1	1	1
+HasSpc		1	1	13	1	1	1	1	1	1	1	1	1	1	14	1	1	1	1
+HasS		1	1	14	1	1	1	1	1	1	1	1	1	1	1	15	1	1	1
+HasU		1	1	15	1	1	1	1	1	1	1	1	1	1	1	1	16	1	1
+HasK		1	1	16	1	1	1	1	1	1	1	1	1	1	1	1	1	17	1
+HasC		1	1	17	1	1	1	1	1	1	1	1	1	1	1	1	1	1	18
+HasE		1	1	18	1	1	1	1	1	1	1	1	1	1	19	1	1	1	1
+HasS2		1	1	19	1	1	1	1	1	1	1	1	1	1	1	20	1	1	1
 
 	GoTo		Mark?		Advance?	InsertMark	InsertCurrent
 1	StartText	no		yes		none		none
-2	HasN		no		yes		none		Before
-3	HasA		no		yes		none		none
-4	HasR		no		yes		none		none
-5	HasZ		no		yes		none		none
-6	HasEog		no		yes		none		none
-7	HasD		no		yes		none		none
-8	HasZ2		no		yes		none		none
-9	HasI		no		yes		none		none
-10	HasA2		no		yes		none		none
-11	HasSpc		no		yes		none		none
-12	HasS		no		yes		none		none
-13	HasU		no		yes		none		none
-14	HasK		no		yes		none		none
-15	HasC		no		yes		none		none
-16	HasE		no		yes		none		none
-17	HasS2		no		yes		none		none
-18	StartText	no		yes		none		After
-19	HasN		no		yes		none		none
-20	HasBar		no		yes		none		none
+2	HasBar		no		yes		none		none
+3	HasN		no		yes		none		Before
+4	HasN		no		yes		none		none
+5	HasA		no		yes		none		none
+6	HasR		no		yes		none		none
+7	HasZ		no		yes		none		none
+8	HasEog		no		yes		none		none
+9	HasD		no		yes		none		none
+10	HasZ2		no		yes		none		none
+11	HasI		no		yes		none		none
+12	HasA2		no		yes		none		none
+13	HasSpc		no		yes		none		none
+14	HasS		no		yes		none		none
+15	HasU		no		yes		none		none
+16	HasK		no		yes		none		none
+17	HasC		no		yes		none		none
+18	HasE		no		yes		none		none
+19	HasS2		no		yes		none		none
+20	StartText	no		yes		none		After
 
 // This insertion would be better served as a split vowel type instead of kashida-like,
 // but this apparently does not work in CoreText, having some fatal display issues.
