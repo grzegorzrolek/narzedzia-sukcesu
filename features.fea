@@ -23,7 +23,7 @@ lookup LETTERSPACING {
 	pos quotedbl N A R Z Eogonek D' 61 Z; # 30
 	pos quotedbl N A R Z Eogonek D Z' 41 I; # 20
 	pos quotedbl N A R Z Eogonek D Z I' 20 A; # 10
-	pos quotedbl N A R Z Eogonek D Z I A space' -215 S; # 20 - space's natural advance
+	pos quotedbl N A R Z Eogonek D Z I A space' -227 S; # 20 - space's natural advance, and -6 of actual kerning
 	pos quotedbl N A R Z Eogonek D Z I A space S' 61 U; # 30
 	pos quotedbl N A R Z Eogonek D Z I A space S U' 102 K; # 50
 	pos quotedbl N A R Z Eogonek D Z I A space S U K' 164 C; # 80

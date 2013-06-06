@@ -96,7 +96,7 @@ ZI
 IA
 	20	// 10
 A_
-	-215	// 20 - space's natural advance
+	-227	// 20 - space's natural advance, and -6 of actual kerning
 _S
 	0	// 0; don't kern here: Safari won't read it
 SU

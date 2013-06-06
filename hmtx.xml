@@ -22,7 +22,7 @@
 	<LongMetric glyphRefID="0" advance="256" bearing="0" />
 	<LongMetric glyphRefID="1" advance="0" bearing="0" />
 	<LongMetric glyphRefID="2" advance="392" bearing="56" />
-	<LongMetric glyphRefID="3" advance="400" bearing="56" />
+	<LongMetric glyphRefID="3" advance="384" bearing="32" />
 	<LongMetric glyphRefID="4" advance="400" bearing="56" />
 	<LongMetric glyphRefID="5" advance="288" bearing="8" />
 	<LongMetric glyphRefID="6" advance="296" bearing="56" />
