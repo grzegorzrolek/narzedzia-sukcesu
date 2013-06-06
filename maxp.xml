@@ -33,8 +33,12 @@
 <maxpTable
 	versionMajor="1"
 	versionMinor="0"
-	numGlyphs="18"
+	numGlyphs="19"
 	maxPoints="32"
 	maxContours="2"
+	maxComponentPoints="32"
+	maxComponentContours="1"
 	maxZones="2"
+	maxComponentElements="1"
+	maxComponentDepth="1"
 	/>

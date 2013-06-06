@@ -43,19 +43,20 @@
 		<PostScriptName glyphRefID="0" NameString=".notdef" />
 		<PostScriptName glyphRefID="1" NameString="NULL" />
 		<PostScriptName glyphRefID="2" NameString="N" />
-		<PostScriptName glyphRefID="3" NameString="A" />
-		<PostScriptName glyphRefID="4" NameString="R" />
-		<PostScriptName glyphRefID="5" NameString="Z" />
-		<PostScriptName glyphRefID="6" NameString="Eogonek" />
-		<PostScriptName glyphRefID="7" NameString="D" />
-		<PostScriptName glyphRefID="8" NameString="I" />
+		<PostScriptName glyphRefID="3" NameString="a" />
+		<PostScriptName glyphRefID="4" NameString="r" />
+		<PostScriptName glyphRefID="5" NameString="z" />
+		<PostScriptName glyphRefID="6" NameString="eogonek" />
+		<PostScriptName glyphRefID="7" NameString="d" />
+		<PostScriptName glyphRefID="8" NameString="i" />
 		<PostScriptName glyphRefID="9" NameString="space" />
 		<PostScriptName glyphRefID="10" NameString="S" />
-		<PostScriptName glyphRefID="11" NameString="U" />
-		<PostScriptName glyphRefID="12" NameString="K" />
-		<PostScriptName glyphRefID="13" NameString="C" />
-		<PostScriptName glyphRefID="14" NameString="E" />
-		<PostScriptName glyphRefID="15" NameString="quotedbl" />
-		<PostScriptName glyphRefID="16" NameString="ogonekcmb" />
-		<PostScriptName glyphRefID="17" NameString="o" />
+		<PostScriptName glyphRefID="11" NameString="u" />
+		<PostScriptName glyphRefID="12" NameString="k" />
+		<PostScriptName glyphRefID="13" NameString="c" />
+		<PostScriptName glyphRefID="14" NameString="e" />
+		<PostScriptName glyphRefID="15" NameString="s" />
+		<PostScriptName glyphRefID="16" NameString="quotedbl" />
+		<PostScriptName glyphRefID="17" NameString="ogonekcmb" />
+		<PostScriptName glyphRefID="18" NameString="o" />
 </postTable>
