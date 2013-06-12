@@ -1,2 +1,19 @@
 # Builds
 build
+
+# Makefile helpers
+.head
+.name
+.maxp
+.glyf
+.cmap
+.hmtx
+.hhea
+.post
+.hints
+.morx
+.kern
+.otlayout
+
+# Test report
+test.out
