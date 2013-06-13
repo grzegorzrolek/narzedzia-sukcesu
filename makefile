@@ -3,7 +3,10 @@
 
 
 TARGET = build/NarzedziaSukcesu.ttf
-NULL = Null.ttf
+
+# Null.ttf submodule will be cloned automatically if it hasn't been cloned by hand already.
+NULLDIR = null-ttf
+NULL = $(NULLDIR)/Null.ttf
 
 # Helper files to make some methodology in fusing the individual tables possible.
 BASICS = $(addprefix .,head name maxp glyf cmap hmtx hhea post)
@@ -41,6 +44,14 @@ $(BASICS): .%: %.xml $(NULL) | $(TARGET)
 
 $(TARGET): $(NULL) | build
 	cp $< $@
+
+$(NULL): FORCE
+ifeq ($(wildcard $(NULL)),)
+	git submodule update --init $(NULLDIR)
+endif
+	@cd $(NULLDIR) && make
+
+FORCE:
 
 build:
 	mkdir $@
