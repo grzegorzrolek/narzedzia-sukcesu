@@ -61,8 +61,8 @@
 	
 	<!-- Version -->
 	<nameTableEntry nameTypeID="5">
-		<localizedName platformID="0" scriptID="3" languageID="0">0.11</localizedName>
-		<localizedName platformID="3" scriptID="1" languageID="1033">0.11</localizedName>
+		<localizedName platformID="0" scriptID="3" languageID="0">0.12</localizedName>
+		<localizedName platformID="3" scriptID="1" languageID="1033">0.12</localizedName>
 	</nameTableEntry>
 	
 	<!-- PostScript -->
