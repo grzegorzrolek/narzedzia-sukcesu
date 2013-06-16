@@ -23,9 +23,7 @@ any letter in the stream, the process stops in place.
 
 Internally these are state machines with states chained across the
 entire stream on the AAT side, or appropriately long chaining contextual
-lookups on the OTL side. In an OTL environment, enclosing quotation
-marks in the input stream are required; with AAT their role is provided
-automatically if you don't type them explicitly.
+lookups on the OTL side.
 
 
 DEVELOPMENT

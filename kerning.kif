@@ -30,49 +30,50 @@ s	s
 // that could be introduced because of Eogonek ligation in the morph table.
 
 		EOT	OOB	DEL	EOL	bar	N	a	r	z	eog	d	i	Spc	S	u	k	c	e	s
-StartText	1	1	1	1	2	1	1	1	1	1	1	1	1	1	1	1	1	1	1
-StartLine	1	1	1	1	2	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+StartText	1	1	1	1	2	4	1	1	1	1	1	1	1	1	1	1	1	1	1
+StartLine	1	1	1	1	2	4	1	1	1	1	1	1	1	1	1	1	1	1	1
 HasBar		1	1	1	1	2	3	1	1	1	1	1	1	1	1	1	1	1	1	1
-HasN		1	1	1	1	1	1	4	1	1	1	1	1	1	1	1	1	1	1	1
-HasA		1	1	1	1	1	1	1	5	1	1	1	1	1	1	1	1	1	1	1
-HasR		1	1	1	1	1	1	1	1	6	1	1	1	1	1	1	1	1	1	1
-HasZ		1	1	1	1	1	1	1	1	1	7	1	1	1	1	1	1	1	1	1
-HasEog		1	1	21	1	1	1	1	1	1	1	8	1	1	1	1	1	1	1	1
-HasD		1	1	1	1	1	1	1	1	9	1	1	1	1	1	1	1	1	1	1
-HasZ2		1	1	1	1	1	1	1	1	1	1	1	10	1	1	1	1	1	1	1
-HasI		1	1	1	1	1	1	11	1	1	1	1	1	1	1	1	1	1	1	1
-HasA2		1	1	1	1	1	1	1	1	1	1	1	1	12	1	1	1	1	1	1
-HasSpc		1	1	1	1	1	1	1	1	1	1	1	1	1	13	1	1	1	1	1
-HasS		1	1	1	1	1	1	1	1	1	1	1	1	1	1	14	1	1	1	1
-HasU		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	15	1	1	1
-HasK		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	16	1	1
-HasC		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	17	1
-HasE		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	18
-HasS2		1	1	1	1	1	1	1	1	1	1	1	1	1	1	19	1	1	1	1
-HasU2		1	1	1	1	20	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+HasN		1	1	1	1	1	1	5	1	1	1	1	1	1	1	1	1	1	1	1
+HasA		1	1	1	1	1	1	1	6	1	1	1	1	1	1	1	1	1	1	1
+HasR		1	1	1	1	1	1	1	1	7	1	1	1	1	1	1	1	1	1	1
+HasZ		1	1	1	1	1	1	1	1	1	8	1	1	1	1	1	1	1	1	1
+HasEog		1	1	22	1	1	1	1	1	1	1	9	1	1	1	1	1	1	1	1
+HasD		1	1	1	1	1	1	1	1	10	1	1	1	1	1	1	1	1	1	1
+HasZ2		1	1	1	1	1	1	1	1	1	1	1	11	1	1	1	1	1	1	1
+HasI		1	1	1	1	1	1	12	1	1	1	1	1	1	1	1	1	1	1	1
+HasA2		1	1	1	1	1	1	1	1	1	1	1	1	13	1	1	1	1	1	1
+HasSpc		1	1	1	1	1	1	1	1	1	1	1	1	1	14	1	1	1	1	1
+HasS		1	1	1	1	1	1	1	1	1	1	1	1	1	1	15	1	1	1	1
+HasU		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	16	1	1	1
+HasK		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	17	1	1
+HasC		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	18	1
+HasE		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	19
+HasS2		1	1	1	1	1	1	1	1	1	1	1	1	1	1	20	1	1	1	1
+HasU2		1	1	1	1	21	1	1	1	1	1	1	1	1	1	1	1	1	1	1
 
 	GoTo		Push?		Advance?	KernValues
 1	StartText	no		yes		none
 2	HasBar		no		yes		none
 3	HasN		yes		yes		bar
-4	HasA		yes		yes		Na
-5	HasR		yes		yes		ar
-6	HasZ		yes		yes		rz
-7	HasEog		yes		yes		zeog
-8	HasD		yes		yes		eogd
-9	HasZ2		yes		yes		dz
-10	HasI		yes		yes		zi
-11	HasA2		yes		yes		ia
-12	HasSpc		yes		yes		a_
-13	HasS		yes		yes		none
-14	HasU		yes		yes		Su
-15	HasK		yes		yes		uk
-16	HasC		yes		yes		kc
-17	HasE		yes		yes		ce
-18	HasS2		yes		yes		es
-19	HasU2		yes		yes		su
-20	StartText	yes		yes		bar
-21	HasEog		no		yes		none
+4	HasN		no		yes		none
+5	HasA		yes		yes		Na
+6	HasR		yes		yes		ar
+7	HasZ		yes		yes		rz
+8	HasEog		yes		yes		zeog
+9	HasD		yes		yes		eogd
+10	HasZ2		yes		yes		dz
+11	HasI		yes		yes		zi
+12	HasA2		yes		yes		ia
+13	HasSpc		yes		yes		a_
+14	HasS		yes		yes		none
+15	HasU		yes		yes		Su
+16	HasK		yes		yes		uk
+17	HasC		yes		yes		kc
+18	HasE		yes		yes		ce
+19	HasS2		yes		yes		es
+20	HasU2		yes		yes		su
+21	StartText	yes		yes		bar
+22	HasEog		no		yes		none
 
 // The listing on the margin are values conceived in a 1000 UPM setting,
 // that were subsequently translated into an em of 2048 target units.

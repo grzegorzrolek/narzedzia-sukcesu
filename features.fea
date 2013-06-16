@@ -15,22 +15,22 @@ feature ccmp {
 
 lookup LETTERSPACING {
 	pos quotedbl' 1126 N; # 550 units
-	pos quotedbl N' 696 a; # 340
-	pos quotedbl N a' 430 r; # 210
-	pos quotedbl N a r' 266 z; # 130
-	pos quotedbl N a r z' 170 eogonek; # 83; eogonek shifts 3 points forward justifying its mass center
-	pos quotedbl N a r z eogonek' 96 d; # 47; less 3 points to compensate the shift above
-	pos quotedbl N a r z eogonek d' 61 z; # 30
-	pos quotedbl N a r z eogonek d z' 41 i; # 20
-	pos quotedbl N a r z eogonek d z i' 20 a; # 10
-	pos quotedbl N a r z eogonek d z i a space' -227 S; # 20 - space's natural advance, and -6 of actual kerning
-	pos quotedbl N a r z eogonek d z i a space S' 61 u; # 30
-	pos quotedbl N a r z eogonek d z i a space S u' 102 k; # 50
-	pos quotedbl N a r z eogonek d z i a space S u k' 164 c; # 80
-	pos quotedbl N a r z eogonek d z i a space S u k c' 279 e; # 136; e shifts 6 points for same reasons
-	pos quotedbl N a r z eogonek d z i a space S u k c e' 418 s; # 204; compensation
-	pos quotedbl N a r z eogonek d z i a space S u k c e s' 696 u; # 340
-	pos quotedbl N a r z eogonek d z i a space S u k c e s u' 1126 quotedbl; # 550
+	pos N' 696 a; # 340
+	pos N a' 430 r; # 210
+	pos N a r' 266 z; # 130
+	pos N a r z' 170 eogonek; # 83; eogonek shifts 3 points forward justifying its mass center
+	pos N a r z eogonek' 96 d; # 47; less 3 points to compensate the shift above
+	pos N a r z eogonek d' 61 z; # 30
+	pos N a r z eogonek d z' 41 i; # 20
+	pos N a r z eogonek d z i' 20 a; # 10
+	pos N a r z eogonek d z i a space' -227 S; # 20 - space's natural advance, and -6 of actual kerning
+	pos N a r z eogonek d z i a space S' 61 u; # 30
+	pos N a r z eogonek d z i a space S u' 102 k; # 50
+	pos N a r z eogonek d z i a space S u k' 164 c; # 80
+	pos N a r z eogonek d z i a space S u k c' 279 e; # 136; e shifts 6 points for same reasons
+	pos N a r z eogonek d z i a space S u k c e' 418 s; # 204; compensation
+	pos N a r z eogonek d z i a space S u k c e s' 696 u; # 340
+	pos N a r z eogonek d z i a space S u k c e s u' 1126 quotedbl; # 550
 } LETTERSPACING;
 
 # It appears that Adobe's text engine inserts into a glyph stream the space as an end-of-text character.
