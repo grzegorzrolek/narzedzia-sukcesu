@@ -19,23 +19,23 @@
 -->
 
 <hmtxTable>
-	<LongMetric glyphRefID="0" advance="256" bearing="0" />
-	<LongMetric glyphRefID="1" advance="0" bearing="0" />
-	<LongMetric glyphRefID="2" advance="392" bearing="56" />
-	<LongMetric glyphRefID="3" advance="384" bearing="32" />
-	<LongMetric glyphRefID="4" advance="400" bearing="56" />
-	<LongMetric glyphRefID="5" advance="288" bearing="8" />
-	<LongMetric glyphRefID="6" advance="296" bearing="56" />
-	<LongMetric glyphRefID="7" advance="400" bearing="56" />
-	<LongMetric glyphRefID="8" advance="184" bearing="56" />
-	<LongMetric glyphRefID="9" advance="256" bearing="0" />
-	<LongMetric glyphRefID="10" advance="376" bearing="48" />
-	<LongMetric glyphRefID="11" advance="392" bearing="56" />
-	<LongMetric glyphRefID="12" advance="368" bearing="56" />
-	<LongMetric glyphRefID="13" advance="368" bearing="56" />
-	<LongMetric glyphRefID="14" advance="296" bearing="56" />
-	<LongMetric glyphRefID="15" advance="376" bearing="48" />
-	<LongMetric glyphRefID="16" advance="184" bearing="56" />
-	<LongMetric glyphRefID="17" advance="0" bearing="0" />
-	<LongMetric glyphRefID="18" advance="384" bearing="56" />
+	<LongMetric glyphName=".notdef" advance="256" bearing="0" />
+	<LongMetric glyphName="NULL" advance="0" bearing="0" />
+	<LongMetric glyphName="N" advance="392" bearing="56" />
+	<LongMetric glyphName="a" advance="384" bearing="32" />
+	<LongMetric glyphName="r" advance="400" bearing="56" />
+	<LongMetric glyphName="z" advance="288" bearing="8" />
+	<LongMetric glyphName="eogonek" advance="296" bearing="56" />
+	<LongMetric glyphName="d" advance="400" bearing="56" />
+	<LongMetric glyphName="i" advance="184" bearing="56" />
+	<LongMetric glyphName="space" advance="256" bearing="0" />
+	<LongMetric glyphName="S" advance="376" bearing="48" />
+	<LongMetric glyphName="u" advance="392" bearing="56" />
+	<LongMetric glyphName="k" advance="368" bearing="56" />
+	<LongMetric glyphName="c" advance="368" bearing="56" />
+	<LongMetric glyphName="e" advance="296" bearing="56" />
+	<LongMetric glyphName="s" advance="376" bearing="48" />
+	<LongMetric glyphName="quotedbl" advance="184" bearing="56" />
+	<LongMetric glyphName="ogonekcmb" advance="0" bearing="0" />
+	<LongMetric glyphName="o" advance="384" bearing="56" />
 </hmtxTable>

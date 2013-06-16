@@ -9,7 +9,7 @@ NULLDIR = null-ttf
 NULL = $(NULLDIR)/Null.ttf
 
 # Helper files to make some methodology in fusing the individual tables possible.
-BASICS = $(addprefix .,head name maxp glyf cmap hmtx hhea post)
+BASICS = $(addprefix .,head name maxp post glyf cmap hmtx hhea)
 HINTS = .hints
 MORPHING = .morx
 KERNING = .kern
@@ -22,7 +22,7 @@ $(OTLAYOUT): features.fea $(NULL) | $(TARGET)
 	makeotf -f $(TARGET) -o $(basename $(TARGET)).otf -ff features.fea
 	mv $(basename $(TARGET)).otf $(TARGET)
 	ftxdumperfuser -k -t 'OS/2' $(TARGET)
-	for TABLE in head name cmap hhea post; do ftxdumperfuser -d $$TABLE.xml -t $$TABLE $(TARGET); done
+	for TABLE in head name post cmap hhea; do ftxdumperfuser -d $$TABLE.xml -t $$TABLE $(TARGET); done
 	@touch $@
 
 $(KERNING): kern.xml $(NULL) | $(TARGET)

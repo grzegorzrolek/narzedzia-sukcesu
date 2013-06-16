@@ -24,7 +24,7 @@
 	PostScript entries for Narzędzia Sukcesu the logotype font
 	Copyright 2012 Grzegorz Rolek
 
-	Number of glyphs must match the maxGlyphs entry of 'maxp' table.
+	Must be fused after the 'maxp' table and match the indicated glyphs number.
  
 -->
 
