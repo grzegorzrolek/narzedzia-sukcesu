@@ -36,6 +36,6 @@
 	<LongMetric glyphName="e" advance="296" bearing="56" />
 	<LongMetric glyphName="s" advance="376" bearing="48" />
 	<LongMetric glyphName="quotedbl" advance="184" bearing="56" />
-	<LongMetric glyphName="ogonekcmb" advance="0" bearing="0" />
+	<LongMetric glyphName="ogonekcmb" advance="0" bearing="-120" />
 	<LongMetric glyphName="o" advance="384" bearing="56" />
 </hmtxTable>

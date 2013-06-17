@@ -37,8 +37,8 @@
 	maxPoints="32"
 	maxContours="2"
 	maxComponentPoints="32"
-	maxComponentContours="1"
+	maxComponentContours="2"
 	maxZones="2"
-	maxComponentElements="1"
+	maxComponentElements="2"
 	maxComponentDepth="1"
 	/>
