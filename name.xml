@@ -23,7 +23,6 @@
  
 	Most entries are Unicode Version 2.0 or later with BMP only.
 	PostScript name requires Macintosh platform with script MacRoman.
-	Track name entry is a name for a track in the 'trak' table.
 
 -->
 
@@ -95,11 +94,4 @@
 		<localizedName platformID="3" scriptID="1" languageID="1033">For documentation purposes only.</localizedName>
 	</nameTableEntry>
 	
-	<!-- Track (uncomment when fusing the 'trak' table) 
-	<nameTableEntry nameTypeID="256">
-		<localizedName platformID="0" scriptID="3" languageID="0">Logotype</localizedName>
-		<localizedName platformID="3" scriptID="1" languageID="1033">Logotype</localizedName>
-	</nameTableEntry>
-	-->
-
 </nameTable>

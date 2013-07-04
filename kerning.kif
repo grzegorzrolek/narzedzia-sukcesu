@@ -118,9 +118,9 @@ su
 	
 // Fake tracking
 //
-// Until the 'trak' table support becomes available in CoreText,
+// Because the 'trak' table is currently unsupported in CoreText,
 // tracking is imitated as kerning across the whole stream.
-// Note the space is not tracked before a word; Safari will ignore it anyway.
+// Note the space is not kerned before a word; Safari will ignore it anyway.
 
 Type Contextual
 Orientation H
