@@ -52,15 +52,15 @@ HasE		1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	18
 HasS2		1	1	1	1	1	1	1	1	1	1	1	1	1	1	19	1	1	1	1
 HasU2		1	1	1	1	20	1	1	1	1	1	1	1	1	1	1	1	1	1	1
 
-	GoTo		Push?		Advance?	KernList
+	GoTo		Push?		Advance?	KernValues
 1	StartText	no		yes		none
 2	HasBar		no		yes		none
-3	HasN		yes		yes		Bar
+3	HasN		yes		yes		bar
 4	HasA		yes		yes		Na
 5	HasR		yes		yes		ar
 6	HasZ		yes		yes		rz
-7	HasEog		yes		yes		ze
-8	HasD		yes		yes		ed
+7	HasEog		yes		yes		zeog
+8	HasD		yes		yes		eogd
 9	HasZ2		yes		yes		dz
 10	HasI		yes		yes		zi
 11	HasA2		yes		yes		ia
@@ -72,7 +72,7 @@ HasU2		1	1	1	1	20	1	1	1	1	1	1	1	1	1	1	1	1	1	1
 17	HasE		yes		yes		ce
 18	HasS2		yes		yes		es
 19	HasU2		yes		yes		su
-20	StartText	yes		yes		Bar
+20	StartText	yes		yes		bar
 21	HasEog		no		yes		none
 
 // The listing on the margin are values conceived in a 1000 UPM setting,
@@ -80,42 +80,25 @@ HasU2		1	1	1	1	20	1	1	1	1	1	1	1	1	1	1	1	1	1	1
 // Note that in the final binary each value has the lowest bit set
 // to be recognized as an end of a kern list; see the spec for details.
 
-bar
-	1126	// 550 units
-Na
-	696	// 340
-ar
-	430	// 210
-rz
-	266	// 130
-ze
-	170	// 83; eogonek shifts 3 points forward justifying its mass center
-ed
-	96	// 47; less 3 points to compensate the shift above
-dz
-	61	// 30
-zi
-	41	// 20
-ia
-	20	// 10
-a_
-	-227	// 20 - space's natural advance, and -6 of actual kerning
-_S
-	0	// 0; don't kern here: Safari won't read it
-Su
-	61	// 30
-uk
-	102	// 50
-kc
-	164	// 80
-ce
-	279	// 136; e shifts 6 points for same reasons
-es
-	418	// 204; compensation
-su
-	696	// 340
-	
-	
+bar 	1126	// 550 units
+Na	696	// 340
+ar	430	// 210
+rz	266	// 130
+zeog	170	// 83; eogonek shifts 3 points forward justifying its mass center
+eogd	96	// 47; less 3 points to compensate the shift above
+dz	61	// 30
+zi	41	// 20
+ia	20	// 10
+a_	-227	// 20 - space's natural advance, and -6 of actual kerning
+_S	0	// 0; don't kern here: Safari won't read it
+Su	61	// 30
+uk	102	// 50
+kc	164	// 80
+ce	279	// 136; e shifts 6 points for same reasons
+es	418	// 204; compensation
+su	696	// 340
+
+
 // Fake tracking
 //
 // Because the 'trak' table is currently unsupported in CoreText,
@@ -132,12 +115,11 @@ StartText	1	2	1	1	3
 StartLine	1	2	1	1	3
 Space		1	1	1	1	3
 
-	GoTo		Push?		Advance?	KernList
+	GoTo		Push?		Advance?	KernValues
 1	StartText	no		yes		none
 2	StartText	yes		yes		Track
 3	Space		yes		yes		Track
 
 // In hex this is made odd downwards to make up for the subtable above.
 
-Track
-	184	// 90 units
+Track	184	// 90 units
