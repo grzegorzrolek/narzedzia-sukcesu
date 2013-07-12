@@ -1,9 +1,8 @@
 // Kerning Input File for Narzędzia Sukcesu the logotype font
 // Copyright 2012 Grzegorz Rolek
 //
-// Despite numerous mentions in OS X Font Tools docs, the Kerning Input File format
-// has never been publicly released by Apple. This file tries to approximate
-// the syntax and serves as a notepad for writing the 'kern' table in hex by hand.
+// Kerning Input File format has never been publicly released by Apple;
+// this file approximates the syntax based on the Morph Input File.
 
 
 // Letterspacing
@@ -118,7 +117,5 @@ Space		1	1	1	1	3
 1	StartText	no		yes		none
 2	StartText	yes		yes		Track
 3	Space		yes		yes		Track
-
-// In hex this is made odd downwards to make up for the subtable above.
 
 Track	184	// 90 units

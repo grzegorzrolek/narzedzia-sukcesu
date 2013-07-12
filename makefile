@@ -25,8 +25,9 @@ $(OTLAYOUT): features.fea $(NULL) | $(TARGET)
 	for TABLE in head name post cmap hhea; do ftxdumperfuser -d $$TABLE.xml -t $$TABLE $(TARGET); done
 	@touch $@
 
-$(KERNING): kern.xml $(NULL) | $(TARGET)
-	ftxdumperfuser -d $< -g -t kern $(TARGET)
+$(KERNING): kerning.kif post.xml $(NULL) | $(TARGET)
+	sh kiftohex.sh -p post.xml $< >kern.xml
+	ftxdumperfuser -d kern.xml -g -t kern $(TARGET)
 	@touch $@
 
 $(MORPHING): morphing.mif $(NULL) | $(TARGET)
@@ -66,4 +67,4 @@ cleanall: clean
 	@rm -rf build
 
 clean:
-	@rm -rf $(BASICS) $(HINTS) $(MORPHING) $(KERNING) $(OTLAYOUT) build/current.fpr test.out
+	@rm -rf $(BASICS) $(HINTS) $(MORPHING) $(KERNING) $(OTLAYOUT) kern.xml build/current.fpr test.out
