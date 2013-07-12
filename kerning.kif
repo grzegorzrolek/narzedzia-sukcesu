@@ -65,7 +65,7 @@ HasU2		1	1	1	1	20	1	1	1	1	1	1	1	1	1	1	1	1	1	1
 10	HasI		yes		yes		zi
 11	HasA2		yes		yes		ia
 12	HasSpc		yes		yes		a_
-13	HasS		yes		yes		_S
+13	HasS		yes		yes		none
 14	HasU		yes		yes		Su
 15	HasK		yes		yes		uk
 16	HasC		yes		yes		kc
@@ -90,7 +90,6 @@ dz	61	// 30
 zi	41	// 20
 ia	20	// 10
 a_	-227	// 20 - space's natural advance, and -6 of actual kerning
-_S	0	// 0; don't kern here: Safari won't read it
 Su	61	// 30
 uk	102	// 50
 kc	164	// 80

@@ -32,7 +32,7 @@
 	
 	<!-- Subtable 1. Letterspacing -->
 	
-	<dataLine offset="00000008" hex="00000218" /> <!-- Subtable length -->
+	<dataLine offset="00000008" hex="00000216" /> <!-- Subtable length -->
 	<dataLine offset="0000000C" hex="0001" /> <!-- Subtable coverage/format -->
 	<dataLine offset="0000000E" hex="0000" /> <!-- Subtable tuple index -->
 	
@@ -97,13 +97,13 @@
 	<dataLine offset="000001CE" hex="00DC 81FC" /> <!-- 09 HasI -->
 	<dataLine offset="000001D2" hex="00EF 81FE" /> <!-- 0A HasA2 -->
 	<dataLine offset="000001D6" hex="0102 8200" /> <!-- 0B HasSpc -->
-	<dataLine offset="000001DA" hex="0115 8202" /> <!-- 0C HasS -->
-	<dataLine offset="000001DE" hex="0128 8204" /> <!-- 0D HasU -->
-	<dataLine offset="000001E2" hex="013B 8206" /> <!-- 0E HasK -->
-	<dataLine offset="000001E6" hex="014E 8208" /> <!-- 0F HasC -->
-	<dataLine offset="000001EA" hex="0161 820A" /> <!-- 10 HasE -->
-	<dataLine offset="000001EE" hex="0174 820C" /> <!-- 11 HasS2 -->
-	<dataLine offset="000001F2" hex="0187 820E" /> <!-- 12 HasU2 -->
+	<dataLine offset="000001DA" hex="0115 8000" /> <!-- 0C HasS -->
+	<dataLine offset="000001DE" hex="0128 8202" /> <!-- 0D HasU -->
+	<dataLine offset="000001E2" hex="013B 8204" /> <!-- 0E HasK -->
+	<dataLine offset="000001E6" hex="014E 8206" /> <!-- 0F HasC -->
+	<dataLine offset="000001EA" hex="0161 8208" /> <!-- 10 HasE -->
+	<dataLine offset="000001EE" hex="0174 820A" /> <!-- 11 HasS2 -->
+	<dataLine offset="000001F2" hex="0187 820C" /> <!-- 12 HasU2 -->
 	<dataLine offset="000001F6" hex="001E 81EE" /> <!-- 13 StartText -->
 	<dataLine offset="000001FA" hex="00A3 0000" /> <!-- 14 HasEog -->
 
@@ -117,44 +117,43 @@
 	<dataLine offset="0000020C" hex="0029" /> <!-- zi -->
 	<dataLine offset="0000020E" hex="0015" /> <!-- ia -->
 	<dataLine offset="00000210" hex="FF1D" /> <!-- a_ -->
-	<dataLine offset="00000212" hex="0001" /> <!-- _S -->
-	<dataLine offset="00000214" hex="003D" /> <!-- Su -->
-	<dataLine offset="00000216" hex="0067" /> <!-- uk -->
-	<dataLine offset="00000218" hex="00A5" /> <!-- kc -->
-	<dataLine offset="0000021A" hex="0117" /> <!-- ce -->
-	<dataLine offset="0000021C" hex="01A3" /> <!-- es -->
-	<dataLine offset="0000021E" hex="02B9" /> <!-- su -->
+	<dataLine offset="00000212" hex="003D" /> <!-- Su -->
+	<dataLine offset="00000214" hex="0067" /> <!-- uk -->
+	<dataLine offset="00000216" hex="00A5" /> <!-- kc -->
+	<dataLine offset="00000218" hex="0117" /> <!-- ce -->
+	<dataLine offset="0000021A" hex="01A3" /> <!-- es -->
+	<dataLine offset="0000021C" hex="02B9" /> <!-- su -->
 	
 	
 	<!-- Subtable 2. Fake tracking -->
 
-	<dataLine offset="00000220" hex="00000036" /> <!-- Subtable length -->
-	<dataLine offset="00000224" hex="0001" /> <!-- Subtable coverage/format -->
-	<dataLine offset="00000226" hex="0000" /> <!-- Subtable tuple index -->
+	<dataLine offset="0000021E" hex="00000036" /> <!-- Subtable length -->
+	<dataLine offset="00000212" hex="0001" /> <!-- Subtable coverage/format -->
+	<dataLine offset="00000224" hex="0000" /> <!-- Subtable tuple index -->
 	
-	<dataLine offset="00000228" hex="0005" /> <!-- Number of classes -->
-	<dataLine offset="0000022A" hex="000A" /> <!-- Offset to classes from subtable's 0x10 -->
-	<dataLine offset="0000022C" hex="0010" /> <!-- Offset to states from subtable's 0x10 -->
-	<dataLine offset="0000022E" hex="0020" /> <!-- Offset to entries from subtable's 0x10 -->
-	<dataLine offset="00000230" hex="002C" /> <!-- Offset to values from subtable's 0x10 -->
+	<dataLine offset="00000226" hex="0005" /> <!-- Number of classes -->
+	<dataLine offset="00000228" hex="000A" /> <!-- Offset to classes from subtable's 0x10 -->
+	<dataLine offset="0000022A" hex="0010" /> <!-- Offset to states from subtable's 0x10 -->
+	<dataLine offset="0000022C" hex="0020" /> <!-- Offset to entries from subtable's 0x10 -->
+	<dataLine offset="0000022E" hex="002C" /> <!-- Offset to values from subtable's 0x10 -->
 	
-	<dataLine offset="00000232" hex="0009" /> <!-- First glyph -->
-	<dataLine offset="00000234" hex="0001" /> <!-- Number of glyphs -->
+	<dataLine offset="00000230" hex="0009" /> <!-- First glyph -->
+	<dataLine offset="00000232" hex="0001" /> <!-- Number of glyphs -->
 	
-	<dataLine offset="00000236" hex="04" /> <!-- Spc space -->
-	<dataLine offset="00000237" hex="00" /> <!-- Padding -->
+	<dataLine offset="00000234" hex="04" /> <!-- Spc space -->
+	<dataLine offset="00000235" hex="00" /> <!-- Padding -->
 
 	                            <!-- EOTOOBDELEOLSpc -->
-	<dataLine offset="00000238" hex="00 01 00 00 02" /> <!-- StartText -->
-	<dataLine offset="0000023D" hex="00 01 00 00 02" /> <!-- StartLine -->
-	<dataLine offset="00000242" hex="00 00 00 00 02" /> <!-- Space -->
-	<dataLine offset="00000247" hex="00" /> <!-- Padding -->
+	<dataLine offset="00000236" hex="00 01 00 00 02" /> <!-- StartText -->
+	<dataLine offset="0000023B" hex="00 01 00 00 02" /> <!-- StartLine -->
+	<dataLine offset="00000240" hex="00 00 00 00 02" /> <!-- Space -->
+	<dataLine offset="00000245" hex="00" /> <!-- Padding -->
 
 	                                               <!--     GoTo -->
-	<dataLine offset="00000248" hex="0010 0000" /> <!--  00 StartText -->
-	<dataLine offset="0000024C" hex="0010 802C" /> <!--  01 Space -->
-	<dataLine offset="00000250" hex="001A 802C" /> <!--  02 Space -->
+	<dataLine offset="00000246" hex="0010 0000" /> <!--  00 StartText -->
+	<dataLine offset="0000024A" hex="0010 802C" /> <!--  01 Space -->
+	<dataLine offset="0000024E" hex="001A 802C" /> <!--  02 Space -->
 	
-	<dataLine offset="00000254" hex="00B7" /> <!-- Track -->
+	<dataLine offset="00000252" hex="00B7" /> <!-- Track -->
 
 </genericSFNTTable>

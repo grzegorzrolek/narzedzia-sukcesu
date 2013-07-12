@@ -34,7 +34,7 @@
 
 <headTable
 	tableVersion="1.0"
-	fontVersion="0.13"
+	fontVersion="0.14"
 	flags="kBaselineIsY0 | kUseIntegerScaling | kFontRequiresLayout | kFontHasDefaultMorts"
 	unitsPerEm="2048"
 	created="Fri, Aug 10, 2012"
