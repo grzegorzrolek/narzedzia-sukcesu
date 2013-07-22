@@ -34,14 +34,14 @@
 
 <headTable
 	tableVersion="1.0"
-	fontVersion="0.14"
+	fontVersion="0.15"
 	flags="kBaselineIsY0 | kUseIntegerScaling | kFontRequiresLayout | kFontHasDefaultMorts"
 	unitsPerEm="2048"
 	created="Fri, Aug 10, 2012"
 	modified="Wed, Aug 29, 2012"
 	xMin="-120"
 	yMin="-592"
-	xMax="368"
+	xMax="384"
 	yMax="2232"
 	macStyle="normal"
 	lowestRecPPEM="17"

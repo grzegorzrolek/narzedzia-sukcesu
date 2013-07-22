@@ -35,7 +35,7 @@
 	versionMinor="0"
 	numGlyphs="19"
 	maxPoints="32"
-	maxContours="2"
+	maxContours="3"
 	maxComponentPoints="32"
 	maxComponentContours="2"
 	maxZones="2"
