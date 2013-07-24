@@ -13,6 +13,16 @@ feature ccmp {
 # The listing on the margin are values conceived in a 1000 UPM setting,
 # that were subsequently translated into an em of 2048 target units.
 
+# It appears that Adobe's text engine inserts into a glyph stream the space as an end-of-text character.
+# This makes this fake tracking being applied to right side of the last visible glyph also,
+# giving uneven spacing on both sides of the logotype's bbox. The ignore rule below prevents this behavior.
+
+lookup TRACKING {
+	@ALL = [N a r z eogonek d i space S u k c e s o];
+	ignore pos @ALL' space;
+	pos @ALL' 184 @ALL; # 90 units
+} TRACKING;
+
 lookup LETTERSPACING {
 	pos N' 696 a; # 340 units
 	pos N a' 430 r; # 210
@@ -31,17 +41,7 @@ lookup LETTERSPACING {
 	pos N a r z eogonek d z i a space S u k c e s' 696 u; # 340
 } LETTERSPACING;
 
-# It appears that Adobe's text engine inserts into a glyph stream the space as an end-of-text character.
-# This makes this fake tracking being applied to right side of the last visible glyph also,
-# giving uneven spacing on both sides of the logotype's bbox. The ignore rule below prevents this behavior.
-
-lookup TRACKING {
-	@ALL = [N a r z eogonek d i space S u k c e s o];
-	ignore pos @ALL' space;
-	pos @ALL' 184 @ALL; # 90 units
-} TRACKING;
-
 feature kern {
-	lookup LETTERSPACING;
 	lookup TRACKING;
+	lookup LETTERSPACING;
 } kern;
