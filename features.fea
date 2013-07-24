@@ -10,9 +10,6 @@ feature ccmp {
 } ccmp;
 
 
-# The listing on the margin are values conceived in a 1000 UPM setting,
-# that were subsequently translated into an em of 2048 target units.
-
 # It appears that Adobe's text engine inserts into a glyph stream the space as an end-of-text character.
 # This makes this fake tracking being applied to right side of the last visible glyph also,
 # giving uneven spacing on both sides of the logotype's bbox. The ignore rule below prevents this behavior.
@@ -20,25 +17,25 @@ feature ccmp {
 lookup TRACKING {
 	@ALL = [N a r z eogonek d i space S u k c e s o];
 	ignore pos @ALL' space;
-	pos @ALL' 184 @ALL; # 90 units
+	pos @ALL' 184 @ALL;
 } TRACKING;
 
 lookup LETTERSPACING {
-	pos N' 696 a; # 340 units
-	pos N a' 430 r; # 210
-	pos N a r' 266 z; # 130
-	pos N a r z' 170 eogonek; # 83; eogonek shifts 3 points forward justifying its mass center
-	pos N a r z eogonek' 96 d; # 47; less 3 points to compensate the shift above
-	pos N a r z eogonek d' 61 z; # 30
-	pos N a r z eogonek d z' 41 i; # 20
-	pos N a r z eogonek d z i' 20 a; # 10
-	pos N a r z eogonek d z i a space' -227 S; # 20 - space's natural advance, and -6 of actual kerning
-	pos N a r z eogonek d z i a space S' 61 u; # 30
-	pos N a r z eogonek d z i a space S u' 102 k; # 50
-	pos N a r z eogonek d z i a space S u k' 164 c; # 80
-	pos N a r z eogonek d z i a space S u k c' 279 e; # 136; e shifts 6 points for same reasons
-	pos N a r z eogonek d z i a space S u k c e' 418 s; # 204; compensation
-	pos N a r z eogonek d z i a space S u k c e s' 696 u; # 340
+	pos N' 696 a;
+	pos N a' 430 r;
+	pos N a r' 266 z;
+	pos N a r z' 170 eogonek; # 164 + eogonek shifting 6 points forward to justify its mass center
+	pos N a r z eogonek' 96 d; # 102 less 6 points to compensate eogonek's shift
+	pos N a r z eogonek d' 62 z;
+	pos N a r z eogonek d z' 40 i;
+	pos N a r z eogonek d z i' 22 a;
+	pos N a r z eogonek d z i a space' -228 S; # 40 - 256 of space's advance, and -12 of actual kerning
+	pos N a r z eogonek d z i a space S' 62 u;
+	pos N a r z eogonek d z i a space S u' 102 k;
+	pos N a r z eogonek d z i a space S u k' 164 c;
+	pos N a r z eogonek d z i a space S u k c' 278 e; # 266 + e shifting 12 points the way eogonek does
+	pos N a r z eogonek d z i a space S u k c e' 418 s; # 430 less 12 points to compensate e's shift
+	pos N a r z eogonek d z i a space S u k c e s' 696 u;
 } LETTERSPACING;
 
 feature kern {
