@@ -122,12 +122,19 @@ do
 		do
 			indexof $glyph ${glyphs[@]}
 			test $index -eq -1 && { echo >&2 "fatal: glyph not found: $glyph"; exit 1; }
-			classes[$index]=$((nclasses++))
+			classes[$index]=$nclasses
 			test $index -lt ${startgid=$index} && startgid=$index
 			test $index -gt ${endgid=$index} && endgid=$index
 		done
 
+		let nclasses++
+
 		read
+	done
+
+	# Set an Out-of-Bounds class on glyphs inbetween the specified ones.
+	for i in $(seq $startgid $endgid)
+	do test "${classes[$i]}" || classes[$i]=1
 	done
 
 	let ngids=$endgid-$startgid+1
@@ -268,7 +275,7 @@ do
 	printf "\t<dataline offset=\"%08X\" hex=\"%04X\"/> <!-- No. of glyphs -->\n" $off $ngids && let off+=2
 
 	printf "\n"
-	for i in ${!classes[@]}; do
+	for i in $(seq $startgid $endgid); do
 	printf "\t<dataline offset=\"%08X\" hex=\"%02X\"/> <!-- %s\t%s -->\n" $off ${classes[$i]} ${clnames[${classes[$i]}]} ${glyphs[$i]} && let off+=1
 	done
 	if test $clpadding -eq 1; then
