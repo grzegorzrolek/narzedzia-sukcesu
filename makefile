@@ -34,8 +34,15 @@ $(MORPHING): morphing.mif $(NULL) | $(TARGET)
 	ftxenhancer -m $< $(TARGET)
 	@touch $@
 
+# Release 0.96 of ttfautohint broke interface compatibility with the -c option
+# now meaning exactly the opposite of what it used to, so adjust the command.
+TTFA096 := $(shell expr $$(ttfautohint -V | grep ^ttfautohint | cut -f2 -d' ') \>= 0.96)
+ifneq ($(TTFA096),1)
+TTFACMP = -c
+endif
+
 $(HINTS): .glyf $(NULL) | $(TARGET)
-	ttfautohint -f -n -c $(TARGET) $(basename $(TARGET))_hinted.ttf
+	ttfautohint -f -n $(TTFACMP) $(TARGET) $(basename $(TARGET))_hinted.ttf
 	mv $(basename $(TARGET))_hinted.ttf $(TARGET)
 	@touch $@
 
