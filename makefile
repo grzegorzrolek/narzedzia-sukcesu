@@ -25,7 +25,7 @@ $(OTLAYOUT): features.fea $(NULL) | $(TARGET)
 	@touch $@
 
 $(KERNING): kerning.kif post.xml $(NULL) | $(TARGET)
-	sh kiftohex.sh -p post.xml $< >kern.xml
+	sh kif-compiler/kif.sh post.xml $< >kern.xml
 	ftxdumperfuser -d kern.xml -g -t kern $(TARGET)
 	@touch $@
 

@@ -1,3 +1,6 @@
 [submodule "null-ttf"]
 	path = null-ttf
 	url = git@github.com:grzegorzrolek/null-ttf.git
+[submodule "kif-compiler"]
+	path = kif-compiler
+	url = git@github.com:grzegorzrolek/kif-compiler.git
