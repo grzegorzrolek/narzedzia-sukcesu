@@ -4,7 +4,6 @@
 
 TARGET = build/NarzedziaSukcesu.ttf
 
-# Null.ttf submodule will be cloned automatically if it hasn't been cloned by hand already.
 NULLDIR = null-ttf
 NULL = $(NULLDIR)/Null.ttf
 
@@ -54,9 +53,6 @@ $(TARGET): $(NULL) | build
 	cp $< $@
 
 $(NULL): FORCE
-ifeq ($(wildcard $(NULL)),)
-	git submodule update --init $(NULLDIR)
-endif
 	@cd $(NULLDIR) && make
 
 FORCE:
