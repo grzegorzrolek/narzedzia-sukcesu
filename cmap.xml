@@ -86,6 +86,7 @@
 		<map charValue="0x0075" glyphName="u"/>
 		<map charValue="0x007A" glyphName="z"/>
 		<map charValue="0x00A0" glyphName="space"/>
+		<map charValue="0x00AE" glyphName="registered"/>
 		<map charValue="0x0119" glyphName="eogonek"/>
 		<map charValue="0x0328" glyphName="ogonekcmb"/>
 	</cmapSubtable>
@@ -105,6 +106,7 @@
 		<map charValue="0x0075" glyphName="u"/>
 		<map charValue="0x007A" glyphName="z"/>
 		<map charValue="0x00A0" glyphName="space"/>
+		<map charValue="0x00AE" glyphName="registered"/>
 		<map charValue="0x0119" glyphName="eogonek"/>
 		<map charValue="0x0328" glyphName="ogonekcmb"/>
 	</cmapSubtable>

@@ -33,9 +33,9 @@
 <maxpTable
 	versionMajor="1"
 	versionMinor="0"
-	numGlyphs="18"
-	maxPoints="32"
-	maxContours="3"
+	numGlyphs="19"
+	maxPoints="57"
+	maxContours="4"
 	maxComponentPoints="32"
 	maxComponentContours="2"
 	maxZones="2"

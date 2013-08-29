@@ -10,16 +10,18 @@
 // Because the 'trak' table is currently unsupported in CoreText,
 // tracking is imitated as kerning across the whole stream.
 // Note the space is not kerned before a word; Safari will ignore it anyway.
+// Don't kern the registered sign so it won't alter the logotype's optical bounds.
 
 Type Contextual
 Orientation H
 
 Spc	space
+Reg	registered
 
-		EOT	OOB	DEL	EOL	Spc
-StartText	1	2	1	1	3
-StartLine	1	2	1	1	3
-Space		1	1	1	1	3
+		EOT	OOB	DEL	EOL	Spc	Reg
+StartText	1	2	1	1	3	1
+StartLine	1	2	1	1	3	1
+Space		1	1	1	1	3	1
 
 	GoTo		Push?		Advance?	KernValues
 1	StartText	no		yes		none
