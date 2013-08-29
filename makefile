@@ -17,7 +17,7 @@ OTLAYOUT = .otlayout
 # First the basics (note the table order), hints, and the smarts (without particular order).
 all: $(BASICS) $(HINTS) $(MORPHING) $(KERNING) $(OTLAYOUT)
 
-$(OTLAYOUT): features.fea $(NULL) | $(TARGET)
+$(OTLAYOUT): features.fea post.xml $(NULL) | $(TARGET)
 	makeotf -f $(TARGET) -o $(basename $(TARGET)).otf -ff features.fea
 	mv $(basename $(TARGET)).otf $(TARGET)
 	ftxdumperfuser -k -t 'OS/2' $(TARGET)
@@ -29,7 +29,7 @@ $(KERNING): kerning.kif post.xml $(NULL) | $(TARGET)
 	ftxdumperfuser -d kern.xml -g -t kern $(TARGET)
 	@touch $@
 
-$(MORPHING): morphing.mif $(NULL) | $(TARGET)
+$(MORPHING): morphing.mif post.xml $(NULL) | $(TARGET)
 	ftxenhancer -m $< $(TARGET)
 	@touch $@
 
