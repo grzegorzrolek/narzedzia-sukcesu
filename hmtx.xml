@@ -20,7 +20,7 @@
 
 <hmtxTable>
 	<LongMetric glyphName=".notdef" advance="448" bearing="64" />
-	<LongMetric glyphName="NULL" advance="0" bearing="0" />
+	<LongMetric glyphName=".null" advance="0" bearing="0" />
 	<LongMetric glyphName="N" advance="392" bearing="56" />
 	<LongMetric glyphName="a" advance="384" bearing="32" />
 	<LongMetric glyphName="r" advance="400" bearing="56" />

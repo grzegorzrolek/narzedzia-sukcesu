@@ -41,7 +41,7 @@
 	maxMemType1="0"
 	>
 		<PostScriptName glyphRefID="0" NameString=".notdef" />
-		<PostScriptName glyphRefID="1" NameString="NULL" />
+		<PostScriptName glyphRefID="1" NameString=".null" />
 		<PostScriptName glyphRefID="2" NameString="N" />
 		<PostScriptName glyphRefID="3" NameString="a" />
 		<PostScriptName glyphRefID="4" NameString="r" />
