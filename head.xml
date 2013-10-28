@@ -34,12 +34,12 @@
 
 <headTable
 	tableVersion="1.0"
-	fontVersion="0.23"
+	fontVersion="0.24"
 	flags="kBaselineIsY0 | kUseIntegerScaling | kFontRequiresLayout | kFontHasDefaultMorts"
 	unitsPerEm="2048"
 	created="Fri, Aug 10, 2012"
 	modified="Wed, Aug 29, 2012"
-	xMin="-120"
+	xMin="-112"
 	yMin="-288"
 	xMax="624"
 	yMax="1640"
