@@ -41,7 +41,7 @@ TTFACMP = -c
 endif
 
 $(HINTS): .glyf $(NULL) | $(TARGET)
-	ttfautohint -f -n $(TTFACMP) $(TARGET) $(basename $(TARGET))_hinted.ttf
+	ttfautohint -n $(TTFACMP) $(TARGET) $(basename $(TARGET))_hinted.ttf
 	mv $(basename $(TARGET))_hinted.ttf $(TARGET)
 	@touch $@
 
