@@ -1,50 +1,56 @@
-NARZĘDZIA SUKCESU THE LOGOTYPE FONT
+Narzędzia Sukcesu™ the logotype
+===============================
 
-This font sets a logotype on the brand's name spontaneously while typing.
-It is part of a broader identity work inspired by Chevrolet Nova's
-speedometer designs of the late '60s. This bit of the work is made open
-as a documentation on still sparse TrueType AAT/OTL font development.
-
-
-EMPIRE'S CUSTOM REVIVAL
-
-Type used is a custom interpretation of the Empire typeface, originally
-designed by Morris Fuller Benton and released under American Type
-Founders in 1937. Found on various facsimiles, all needed letterforms
-were translated by hand into tight and tidy TrueType curves fitting well
-Empire's formal simplicity.
+These are the source files for Narzędzia Sukcesu™ logotype, part of a
+brand identity work inspired by Chevrolet Nova speedometer designs of
+the late ’60s. It has involved a custom drawing of the popular Empire
+typeface and a scheme for the characteristic spacing that is being
+applied on the fly with either AAT or OpenType, whichever is supported.
 
 
-FONT MECHANICS
+Empire
+------
 
-Typesetting process responds and adapts to each successively typed
-letter in the "Narzędzia Sukcesu" input stream. If you miss or mismatch
-any letter in the stream, the process stops in place.
+Empire was originally designed by Morris Fuller Benton and released
+under American Type Founders in 1937. It had been digitised a couple of
+times, most notably by Font Bureau, but I’d have to remake a lot of the
+details anyway. In particular, the uppercase A had to be redrawn for a
+more modern appearance, what would also make it more legible and the
+whole rhythm more interesting. The ogonek was missing as well.
 
-Internally these are state machines with states chained across the
-entire stream on the AAT side, or appropriately long chaining contextual
-lookups on the OTL side.
+I ended up digging through ATF’s facsimiles, drawing the required
+letters from scratch with all the necessary details covered. Fitting
+well into Empire’s formal simplicity, the letters were also drawn
+with TrueType curves exclusively.
 
 
-DEVELOPMENT
+Build
+-----
 
-The font is a TrueType font flavored with both Apple Advanced Typography
-and OpenType Layout features, and is built from scratch with the OS X
-Font Tools with a supplement of Adobe's FDK for OpenType.
+The font is a TrueType font flavoured with both Apple Advanced
+Typography and OpenType Layout features and is built from scratch with
+Apple’s font tool suite and Adobe’s FDK. If you have both utilities
+installed simply run `make` to produce the font binary.
 
 Individual font tables are either edited directly in their respective
-dumps, or are written as dedicated input files. Dumps are read by the
-Font Tools; the input files by either Font Tools or FDK, depending on
-the font technology used. Few tables that the tools don't read are
-prepared as generic hex data in the Font Tools syntax. Font outlines,
-drawn in advance in a font editor, are also stored as such data. Those
-source files are all consecutively compiled into a blank font, Null the
+XML dumps or are written as dedicated input or feature files. Table
+dumps are prepared in Apple’s syntax, with the few tables that the suite
+does not support being prepared as generic hex table data. Note that
+because of a somewhat limited `glyf` table syntax on Apple’s part, glyph
+outlines are also stored in the form of hex data. Each of the source
+files is then consecutively compiled into a blank font, Null the
 TrueType font in particular.
 
+The extra spacing is achieved with state machine-based positioning
+having the states chained across the entire input phrase on the AAT
+side, or appropriately long chaining contextual lookups on the OTL side.
 
-COPYRIGHT & TRADEMARK NOTICE
 
-This work is made open, but its use, as well as use of the logotype
+Copyright
+---------
+
+This work is made open, but its use, as well as the use of the logotype
 itself, is restricted by copyright and trademark laws. Copyright for all
 the work is held by Grzegorz Rolek, 2012. The sole trademark owner is
 Marek Błaszk, Narzędzia Sukcesu.
+
