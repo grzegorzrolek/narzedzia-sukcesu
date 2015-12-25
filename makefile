@@ -59,8 +59,9 @@ FORCE:
 build:
 	mkdir $@
 
-test:
-	@ftxvalidator -T -o test.out $(TARGET)
+test: $(TARGET)
+	@mkdir -p $@
+	ftxvalidator -T -o $@/validator.log $(TARGET)
 
 list:
 	@ftxdumperfuser -l $(TARGET)
@@ -69,4 +70,5 @@ cleanall: clean
 	@rm -rf build
 
 clean:
-	@rm -rf $(BASICS) $(HINTS) $(MORPHING) $(KERNING) $(OTLAYOUT) kern.xml build/current.fpr test.out
+	@rm -rf $(BASICS) $(HINTS) $(MORPHING) $(KERNING) $(OTLAYOUT) kern.xml build/current.fpr test
+
