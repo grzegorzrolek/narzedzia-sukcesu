@@ -20,7 +20,6 @@ all: $(BASICS) $(HINTS) $(MORPHING) $(KERNING) $(OTLAYOUT)
 $(OTLAYOUT): features.fea post.xml $(NULL) | $(TARGET)
 	makeotf -f $(TARGET) -o $(basename $(TARGET)).otf -ff features.fea
 	mv $(basename $(TARGET)).otf $(TARGET)
-	ftxdumperfuser -k -t 'OS/2' $(TARGET)
 	for TABLE in head name post cmap hhea; do ftxdumperfuser -d $$TABLE.xml -t $$TABLE $(TARGET); done
 	@touch $@
 
