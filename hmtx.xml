@@ -21,21 +21,21 @@
 <hmtxTable>
 	<LongMetric glyphName=".notdef" advance="448" bearing="64" />
 	<LongMetric glyphName=".null" advance="0" bearing="0" />
-	<LongMetric glyphName="N" advance="392" bearing="56" />
-	<LongMetric glyphName="a" advance="384" bearing="32" />
-	<LongMetric glyphName="r" advance="400" bearing="56" />
-	<LongMetric glyphName="z" advance="288" bearing="8" />
-	<LongMetric glyphName="eogonek" advance="296" bearing="56" />
-	<LongMetric glyphName="d" advance="400" bearing="56" />
-	<LongMetric glyphName="i" advance="184" bearing="56" />
 	<LongMetric glyphName="space" advance="256" bearing="0" />
+	<LongMetric glyphName="N" advance="392" bearing="56" />
 	<LongMetric glyphName="S" advance="376" bearing="48" />
-	<LongMetric glyphName="u" advance="392" bearing="56" />
-	<LongMetric glyphName="k" advance="368" bearing="56" />
+	<LongMetric glyphName="a" advance="384" bearing="32" />
 	<LongMetric glyphName="c" advance="368" bearing="56" />
+	<LongMetric glyphName="d" advance="400" bearing="56" />
 	<LongMetric glyphName="e" advance="296" bearing="56" />
-	<LongMetric glyphName="s" advance="376" bearing="48" />
-	<LongMetric glyphName="ogonekcmb" advance="0" bearing="-112" />
-	<LongMetric glyphName="registered" advance="0" bearing="272" />
+	<LongMetric glyphName="i" advance="184" bearing="56" />
+	<LongMetric glyphName="k" advance="368" bearing="56" />
 	<LongMetric glyphName="o" advance="384" bearing="56" />
+	<LongMetric glyphName="r" advance="400" bearing="56" />
+	<LongMetric glyphName="s" advance="376" bearing="48" />
+	<LongMetric glyphName="u" advance="392" bearing="56" />
+	<LongMetric glyphName="z" advance="288" bearing="8" />
+	<LongMetric glyphName="registered" advance="0" bearing="272" />
+	<LongMetric glyphName="eogonek" advance="296" bearing="56" />
+	<LongMetric glyphName="ogonekcmb" advance="0" bearing="-112" />
 </hmtxTable>
