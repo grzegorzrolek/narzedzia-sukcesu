@@ -32,8 +32,9 @@ $(MORPHING): morphing.mif post.xml $(NULL) | $(TARGET)
 	ftxenhancer -m $< $(TARGET)
 	@touch $@
 
-# Release 0.96 of ttfautohint broke interface compatibility with the -c option
-# now meaning exactly the opposite of what it used to, so adjust the command.
+# Release 0.96 of ttfautohint made the -c option state exactly the opposite of
+# what it used to, so adjust the command:
+
 TTFA096 := $(shell expr $$(ttfautohint -V | grep ^ttfautohint | cut -f2 -d' ') \>= 0.96)
 ifneq ($(TTFA096),1)
 TTFACMP = -c
